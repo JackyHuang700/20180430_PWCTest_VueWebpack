@@ -7,7 +7,7 @@
         <button type="button" class="btn btn-primary" @click="sweetalert2Click3">Icon、content、footer</button>
         <button type="button" class="btn btn-primary" @click="sweetalert2Click4">圖片</button>
         <button type="button" class="btn btn-primary" @click="sweetalert2Click5">自定義按鈕，右上角關閉按鈕</button>
-        <button type="button" class="btn btn-primary" @click="sweetalert2Click6">success</button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click6">success(多種切換)</button>
         <button type="button" class="btn btn-primary" @click="sweetalert2Click7">添加動畫</button>
         <button type="button" class="btn btn-primary" @click="sweetalert2Click8">confirmBox</button>
 
@@ -21,6 +21,17 @@
         <button type="button" class="btn btn-primary" @click="sweetalert2Click14">input in content</button>
         <button type="button" class="btn btn-primary" @click="sweetalert2Click15">進度條</button>
         <button type="button" class="btn btn-primary" @click="sweetalert2Click16">Ajax 範例</button>
+      </div>
+      <div class="col-12">
+        <h2>進階操作，Input 應用</h2>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click17">text</button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click18">email</button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click19">select </button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click20">radio(demo 非同步取得後端資料)</button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click21">checkbox(會驗證是否有勾選)</button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click22">file(上傳成功後，會利用跳窗顯示相片)</button>
+        <button type="button" class="btn btn-primary" @click="sweetalert2Click23">mutli text</button>
+
       </div>
     </div>
   </div>
@@ -83,9 +94,29 @@ export default {
     },
 
     sweetalert2Click6 () {
+      var type = 'success'
+      var selectType = 7
+      switch (selectType) {
+        case 1:
+          type = 'error'
+          break
+        case 2:
+          type = 'warning'
+          break
+        case 3:
+          type = 'info'
+          break
+        case 4:
+          type = 'question'
+          break
+        default:
+          type = 'success'
+          break
+      }
+
       swal({
         position: 'top-end',
-        type: 'success',
+        type: type,
         title: 'Your work has been saved',
         showConfirmButton: false,
         timer: 1500
@@ -286,6 +317,149 @@ export default {
             })
         }
       }])
+    },
+
+    async sweetalert2Click17 () {
+      const { value: name } = await swal({
+        title: 'What is your name?',
+        input: 'text',
+        inputPlaceholder: 'Enter your name or nickname',
+        showCancelButton: true,
+        inputValidator: (value) => {
+          return !value && 'You need to write something!'
+        }
+      })
+
+      if (name) {
+        swal({ type: 'success', title: 'Hi, ' + name })
+      }
+    },
+
+    async sweetalert2Click18 () {
+      const { value: email } = await swal({
+        title: 'Input email address',
+        input: 'email',
+        inputPlaceholder: 'Enter your email address'
+      })
+
+      if (email) {
+        swal('Entered email: ' + email)
+      }
+    },
+
+    async sweetalert2Click19 () {
+      const { value: country } = await swal({
+        title: 'Select Ukraine',
+        input: 'select',
+        inputOptions: {
+          'SRB': 'Serbia',
+          'UKR': 'Ukraine',
+          'HRV': 'Croatia'
+        },
+        inputPlaceholder: 'Select country',
+        showCancelButton: true,
+        inputValidator: (value) => {
+          return new Promise((resolve) => {
+            if (value === 'UKR') {
+              resolve()
+            } else {
+              resolve('You need to select Ukraine :)')
+            }
+          })
+        }
+      })
+
+      if (country) {
+        swal('You selected: ' + country)
+      }
+    },
+
+    async sweetalert2Click20 () {
+      // inputOptions can be an object or Promise
+      var inputOptions = new Promise((resolve) => {
+        setTimeout(() => {
+          resolve({
+            '#ff0000': 'Red',
+            '#00ff00': 'Green',
+            '#0000ff': 'Blue'
+          })
+        }, 2000)
+      })
+
+      const { value: color } = await swal({
+        title: 'Select color',
+        input: 'radio',
+        inputOptions: inputOptions,
+        inputValidator: (value) => {
+          return !value && 'You need to choose something!'
+        }
+      })
+
+      if (color) {
+        swal({ html: 'You selected: ' + result })
+      }
+    },
+
+    async sweetalert2Click21 () {
+      const { value: accept } = await swal({
+        title: 'Terms and conditions',
+        input: 'checkbox',
+        inputValue: 1,
+        inputPlaceholder:
+          'I agree with the terms and conditions',
+        confirmButtonText:
+          'Continue <i class="fa fa-arrow-right></i>',
+        inputValidator: (result) => {
+          return !result && 'You need to agree with T&C'
+        }
+      })
+
+      if (accept) {
+        swal('You agreed with T&C :)')
+      }
+    },
+
+    async sweetalert2Click22 () {
+      const { value: file } = await swal({
+        title: 'Select image',
+        input: 'file',
+        inputAttributes: {
+          'accept': 'image/*',
+          'aria-label': 'Upload your profile picture'
+        }
+      })
+
+      if (file) {
+        var reader = new FileReader()
+        reader.onload = (e) => {
+          swal({
+            title: 'Your uploaded picture',
+            imageUrl: e.target.result,
+            imageAlt: 'The uploaded picture'
+          })
+        }
+        reader.readAsDataURL(file)
+      }
+    },
+
+    async sweetalert2Click23 () {
+      const { value: formValues } = await swal({
+        title: 'Multiple inputs',
+        html:
+          '<input id="swal-input1" class="swal2-input">' +
+          '<input id="swal-input2" class="swal2-input">',
+        focusConfirm: false,
+        preConfirm: () => {
+          return [
+            document.getElementById('swal-input1').value,
+            document.getElementById('swal-input2').value
+          ]
+        }
+      })
+
+      if (formValues) {
+        swal(JSON.stringify(formValues))
+      }
     }
 
   }
