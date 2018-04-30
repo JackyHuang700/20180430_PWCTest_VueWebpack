@@ -6,6 +6,7 @@ import Full from '@/containers/Full'
 
 // Views
 import HelloWorld from '@/components/HelloWorld'
+import IziToast from '@/components/IziToast'
 import FooTable from '@/components/FooTable'
 import FooTable2 from '@/components/FooTable2'
 
@@ -23,6 +24,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'izitoast',
+          name: 'IziToast',
+          component: IziToast
         },
         {
           path: 'footable',

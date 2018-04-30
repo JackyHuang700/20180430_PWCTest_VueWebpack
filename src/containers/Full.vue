@@ -25,6 +25,10 @@ export default {
           hrefName: 'HelloWorld'
         },
         {
+          href: '#/izitoast',
+          hrefName: 'iziToast'
+        },
+        {
           hrefName: 'FooTable',
           childrens: [
             {
