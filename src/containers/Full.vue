@@ -29,6 +29,10 @@ export default {
           hrefName: 'iziToast'
         },
         {
+          href: '#/sweetalert2',
+          hrefName: 'sweetalert2'
+        },
+        {
           hrefName: 'FooTable',
           childrens: [
             {

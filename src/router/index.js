@@ -7,6 +7,7 @@ import Full from '@/containers/Full'
 // Views
 import HelloWorld from '@/components/HelloWorld'
 import IziToast from '@/components/IziToast'
+import Sweetalert2 from '@/components/Sweetalert2'
 import FooTable from '@/components/FooTable'
 import FooTable2 from '@/components/FooTable2'
 
@@ -29,6 +30,11 @@ export default new Router({
           path: 'izitoast',
           name: 'IziToast',
           component: IziToast
+        },
+        {
+          path: 'sweetalert2',
+          name: 'Sweetalert2',
+          component: Sweetalert2
         },
         {
           path: 'footable',
