@@ -29,6 +29,27 @@ export default {
           hrefName: 'iziToast'
         },
         {
+          hrefName: 'jQueryValidation',
+          childrens: [
+            {
+              href: '#/jqueryvalidation',
+              hrefName: 'rules '
+            },
+            {
+              href: '#/jqueryvalidation2',
+              hrefName: 'rules in js'
+            },
+            {
+              href: '#/jqueryvalidation3',
+              hrefName: '更改错误信息显示的位置'
+            },
+            {
+              href: '#/jqueryvalidation4',
+              hrefName: 'custom rules'
+            }
+          ]
+        },
+        {
           href: '#/sweetalert2',
           hrefName: 'sweetalert2'
         },

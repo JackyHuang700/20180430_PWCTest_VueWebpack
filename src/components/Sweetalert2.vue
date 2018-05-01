@@ -115,7 +115,7 @@ export default {
       }
 
       swal({
-        position: 'top-end',
+        position: 'center',
         type: type,
         title: 'Your work has been saved',
         showConfirmButton: false,
