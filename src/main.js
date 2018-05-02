@@ -5,12 +5,17 @@ import App from './App'
 import router from './router'
 
 import $ from 'jquery'
+import jquery from 'jquery'
 
 // import footable from 'footable/dist/footable.all.min'
 // import 'footable/css/footable.standalone.min.css'
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+
+import mock from './mock'
+require('jquery-mockjax')(jquery, window)
+mock.init_jquery()
 
 Vue.use({
   install: function (Vue, options) {
