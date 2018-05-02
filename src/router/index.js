@@ -14,6 +14,10 @@ import jQueryValidation4 from '@/components/jQueryValidation4'
 import Sweetalert2 from '@/components/Sweetalert2'
 import FooTable from '@/components/FooTable'
 import FooTable2 from '@/components/FooTable2'
+import Select2 from '@/components/Select2'
+import Select22 from '@/components/Select22'
+import Select23 from '@/components/Select23'
+import Select24 from '@/components/Select24'
 
 Vue.use(Router)
 
@@ -69,9 +73,28 @@ export default new Router({
           path: 'footable2',
           name: 'FooTable2',
           component: FooTable2
+        },
+        {
+          path: 'select2',
+          name: 'Select2',
+          component: Select2
+        },
+        {
+          path: 'select22',
+          name: 'Select22',
+          component: Select22
+        },
+        {
+          path: 'select23',
+          name: 'Select23',
+          component: Select23
+        },
+        {
+          path: 'select24',
+          name: 'Select24',
+          component: Select24
         }
       ]
     }
-
   ]
 })

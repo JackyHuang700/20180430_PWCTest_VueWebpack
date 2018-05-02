@@ -65,6 +65,27 @@ export default {
               hrefName: 'FooTable2'
             }
           ]
+        },
+        {
+          hrefName: 'select2',
+          childrens: [
+            {
+              href: '#/select2',
+              hrefName: 'Multi-select boxes(多选效果)'
+            },
+            {
+              href: '#/select22',
+              hrefName: 'Multi-select boxes(多选效果)'
+            },
+            {
+              href: '#/select23',
+              hrefName: '結合圖片的單選'
+            },
+            {
+              href: '#/select24',
+              hrefName: '與後端結合'
+            }
+          ]
         }
 
       ]
