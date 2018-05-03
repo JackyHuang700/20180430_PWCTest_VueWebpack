@@ -3,14 +3,17 @@
     <div class="row">
       <div class="row">
 
-        <select id="state" class="js-example-basic-single" type="text" style="width:90%">
-          <option value="AL">Alabama</option>
-          <option value="WY">Wyoming</option>
-        </select>
-        <br>
-        <br>
-        <input id="new-state" type="text" />
-        <button type="button" id="btn-add-state">Set state value</button>
+        <div class="col-12 mb-3">
+          <select id="state" class="js-example-basic-single" type="text" style="width:90%">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <input id="new-state" type="text" />
+          <button type="button" id="btn-add-state">Set state value</button>
+        </div>
 
       </div>
     </div>

@@ -92,6 +92,10 @@ export default {
             {
               href: '#/select22',
               hrefName: 'Multi-select boxes(多選)'
+            },
+            {
+              href: '#/select27',
+              hrefName: '單、多選，change style</br>'
             }
           ]
         }
