@@ -3,7 +3,7 @@
     <div class="row">
       <div class="row">
 
-        <select id="select2-multiple" class="select2-multiple w-100vw" multiple="multiple">
+        <select id="select2-multiple" class="select2-multiple" multiple="multiple">
           <!--   <option value="1">Adams</option>
   <option value="2">Allen</option>
   <option value="3">Peter</option>
@@ -39,17 +39,6 @@ export default {
   methods: {}
 }
 </script>
-
-<style lang="css">
-
-</style>
 <style lang="css">
 @import 'select2/dist/css/select2.min.css';
-.select2-multiple {
-  width: 75%;
-}
-.w-100vw.w-100vw.w-100vw {
-  width: 100vw;
-}
-
 </style>

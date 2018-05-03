@@ -44,10 +44,6 @@ export default {
         // 收到伺服器回應
         processResults: function (data, params) {
           params.page = params.page || 1
-          //  results: {
-          //               loading: false,
-          //               items: data.items
-          //             },
           return {
             results: data.items[0],
             pagination: {

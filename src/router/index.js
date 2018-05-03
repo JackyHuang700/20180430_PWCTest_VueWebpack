@@ -18,6 +18,8 @@ import Select2 from '@/components/Select2'
 import Select22 from '@/components/Select22'
 import Select23 from '@/components/Select23'
 import Select24 from '@/components/Select24'
+import Select25 from '@/components/Select25'
+import Select26 from '@/components/Select26'
 
 Vue.use(Router)
 
@@ -93,6 +95,16 @@ export default new Router({
           path: 'select24',
           name: 'Select24',
           component: Select24
+        },
+        {
+          path: 'select25',
+          name: 'Select25',
+          component: Select25
+        },
+        {
+          path: 'select26',
+          name: 'Select26',
+          component: Select26
         }
       ]
     }

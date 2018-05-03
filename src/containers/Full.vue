@@ -22,7 +22,7 @@ export default {
       narbarList: [
         {
           href: '#/',
-          hrefName: 'HelloWorld'
+          hrefName: 'Footable(custom)'
         },
         {
           href: '#/izitoast',
@@ -70,20 +70,28 @@ export default {
           hrefName: 'select2',
           childrens: [
             {
-              href: '#/select2',
-              hrefName: 'Multi-select boxes(多选效果)'
-            },
-            {
-              href: '#/select22',
-              hrefName: 'Multi-select boxes(多选效果)'
+              href: '#/select25',
+              hrefName: 'One Select(單選)'
             },
             {
               href: '#/select23',
-              hrefName: '結合圖片的單選'
+              hrefName: '結合圖片的單選(單選)'
             },
             {
               href: '#/select24',
-              hrefName: '與後端結合'
+              hrefName: '與後端結合(單選)'
+            },
+            {
+              href: '#/select26',
+              hrefName: 'update select2 value(單選)'
+            },
+            {
+              href: '#/select2',
+              hrefName: 'Multi-select boxes(多選)'
+            },
+            {
+              href: '#/select22',
+              hrefName: 'Multi-select boxes(多選)'
             }
           ]
         }
