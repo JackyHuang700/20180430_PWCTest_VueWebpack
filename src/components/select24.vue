@@ -25,13 +25,8 @@ export default {
   mounted () {
     // 製作下拉式選單
     function formatRepoProvince (repo) {
-      console.log('formatRepoProvince:', repo)
-      if (repo.loading) return repo.text
-      var markup = ''
-      for (var i in repo) {
-        markup += '<div>' + repo[i].name + '</div>'
-      }
-      return markup
+      if (repo['loading'] === undefined || repo.loading) return repo.text
+      return '<div>' + repo.name + '</div>'
     }
 
     // 远程筛选
@@ -49,9 +44,12 @@ export default {
         // 收到伺服器回應
         processResults: function (data, params) {
           params.page = params.page || 1
-
+          //  results: {
+          //               loading: false,
+          //               items: data.items
+          //             },
           return {
-            results: data.items,
+            results: data.items[0],
             pagination: {
               more: (params.page * 10) < data.total_count
             }
@@ -64,14 +62,6 @@ export default {
       templateResult: formatRepoProvince, // omitted for brevity, see the source of this page
       templateSelection: formatRepoProvince // omitted for brevity, see the source of this page
     })
-
-    // 其他
-    // methodGetSystemLogGetAll({
-    //   queryStr: '',
-    //   pageNo: 2
-    // }).then(c => {
-    //   console.log(c)
-    // })
   },
   methods: {}
 }

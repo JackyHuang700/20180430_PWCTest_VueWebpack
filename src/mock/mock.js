@@ -40,17 +40,18 @@ export default {
       responseTime: 750,
       contentType: 'application/json',
       response: function (settings) {
-        console.log('settings:', settings)
         var { queryStr, pageNo } = settings.data
 
+        var items = pagination(select2List, queryStr, pageNo || 1)
+        for (var i in items[0]) {
+          items[0][i]['loading'] = false
+        }
+
         this.responseText = {
-          items: pagination(select2List, queryStr, pageNo || 1),
+          items: items,
           total_count: select2List.length
         }
       }
-      // responseText: {
-      //   items: 'User Information'
-      // }
     })
   }
 }
