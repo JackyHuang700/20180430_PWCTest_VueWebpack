@@ -12,8 +12,11 @@ import jQueryValidation2 from '@/components/jQueryValidation2'
 import jQueryValidation3 from '@/components/jQueryValidation3'
 import jQueryValidation4 from '@/components/jQueryValidation4'
 import Sweetalert2 from '@/components/Sweetalert2'
+
 import FooTable from '@/components/FooTable'
 import FooTable2 from '@/components/FooTable2'
+import FooTable3 from '@/components/FooTable3'
+
 import Select2 from '@/components/Select2'
 import Select22 from '@/components/Select22'
 import Select23 from '@/components/Select23'
@@ -21,6 +24,10 @@ import Select24 from '@/components/Select24'
 import Select25 from '@/components/Select25'
 import Select26 from '@/components/Select26'
 import Select27 from '@/components/Select27'
+
+import Loading from '@/components/Loading'
+import Loading2 from '@/components/Loading2'
+import Loading3 from '@/components/Loading3'
 
 Vue.use(Router)
 
@@ -78,6 +85,11 @@ export default new Router({
           component: FooTable2
         },
         {
+          path: 'footable3',
+          name: 'FooTable3',
+          component: FooTable3
+        },
+        {
           path: 'select2',
           name: 'Select2',
           component: Select2
@@ -111,6 +123,21 @@ export default new Router({
           path: 'select27',
           name: 'Select27',
           component: Select27
+        },
+        {
+          path: 'loading',
+          name: 'Loading',
+          component: Loading
+        },
+        {
+          path: 'loading2',
+          name: 'Loading2',
+          component: Loading2
+        },
+        {
+          path: 'loading3',
+          name: 'Loading3',
+          component: Loading3
         }
       ]
     }

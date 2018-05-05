@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <div class="container-fluid">
       <Navbar :narbarList="narbarList" />
       <router-view></router-view>
-    </div>
   </div>
 </template>
 
@@ -63,6 +61,10 @@ export default {
             {
               href: '#/fooTable2',
               hrefName: 'FooTable2'
+            },
+            {
+              href: '#/fooTable3',
+              hrefName: 'FooTable3(ajax)'
             }
           ]
         },
@@ -96,6 +98,23 @@ export default {
             {
               href: '#/select27',
               hrefName: '單、多選，change style</br>'
+            }
+          ]
+        },
+        {
+          hrefName: 'loading',
+          childrens: [
+            {
+              href: '#/loading',
+              hrefName: 'style1'
+            },
+            {
+              href: '#/loading2',
+              hrefName: 'style2'
+            },
+            {
+              href: '#/loading3',
+              hrefName: 'style3'
             }
           ]
         }
