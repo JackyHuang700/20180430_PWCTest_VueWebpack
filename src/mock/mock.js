@@ -5,8 +5,12 @@ import MockAdapter from 'axios-mock-adapter'
 // import 'jquery-mockjax'
 
 import { select2List } from './data/select2List'
+import { dataTableList } from './data/dataTableList'
 
-import { apiSelect2Select24GetAll } from '../api/api'
+import {
+  apiSelect2Select24GetAll,
+  apiDataTableDataTableGetAll
+} from '../api/api'
 
 export default {
   init () {
@@ -32,6 +36,7 @@ export default {
 
   // jquery mock
   init_jquery () {
+    // select2
     $.mockjax({
       type: 'GET',
       url: apiSelect2Select24GetAll,
@@ -47,10 +52,43 @@ export default {
           items[0][i]['loading'] = false
         }
 
+        // 回應
         this.responseText = {
           items: items,
           total_count: select2List.length
         }
+      }
+    })
+
+    // dataTable
+    $.mockjax({
+      type: 'GET',
+      url: apiDataTableDataTableGetAll,
+      status: 200,
+      dataType: 'json',
+      responseTime: 150,
+      contentType: 'application/json',
+      response: function (settings) {
+        console.info('settings: ', settings)
+        var { draw, start, length } = settings.data
+        var { value, regex } = settings.data.search
+
+        console.log('start', start)
+        console.log('length', length)
+
+        // copy new data
+        var newDataTableList = JSON.parse(JSON.stringify(dataTableList))
+        // console.log('dataTableList', newDataTableList)
+        newDataTableList.draw = draw
+        newDataTableList.data = paginationToDataTable(
+          newDataTableList.data,
+          value || '',
+          start || 0,
+          length || 10
+        )
+        // console.log('dataTableList2', newDataTableList)
+        // 回應
+        this.responseText = newDataTableList
       }
     })
   }
@@ -69,5 +107,21 @@ function pagination (array, queryStr, pageNo) {
       ? array.slice(offset, array.length)
       : array.slice(offset, offset + pageSize)
   )
+  return newList
+}
+
+// pageNo 當前頁數
+function paginationToDataTable (array, queryStr, pageNo, pageSize) {
+  // 計算分頁資料
+  let newList = []
+  var offset = (pageNo - 1) * pageSize
+  // 搜尋
+  // 分頁
+  var newItems = array.slice(pageNo, (pageNo + pageSize))
+
+  for (var i in newItems) {
+    newList.push(newItems[i])
+  }
+
   return newList
 }

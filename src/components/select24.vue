@@ -16,7 +16,7 @@ import {
   // apiStr
   apiSelect2Select24GetAll,
   // method
-  methodGetSystemLogGetAll
+  methodGetSelect2Select24GetAll
 } from '../api/api'
 import 'select2/dist/js/select2.min.js'
 export default {

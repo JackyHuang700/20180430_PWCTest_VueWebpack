@@ -69,6 +69,16 @@ export default {
           ]
         },
         {
+          hrefName: 'DataTable',
+          childrens: [
+            {
+              href: '#/datatable',
+              hrefName: 'DataTable'
+            }
+
+          ]
+        },
+        {
           hrefName: 'select2',
           childrens: [
             {

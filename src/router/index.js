@@ -17,6 +17,8 @@ import FooTable from '@/components/FooTable'
 import FooTable2 from '@/components/FooTable2'
 import FooTable3 from '@/components/FooTable3'
 
+import DataTable from '@/components/DataTable'
+
 import Select2 from '@/components/Select2'
 import Select22 from '@/components/Select22'
 import Select23 from '@/components/Select23'
@@ -73,6 +75,11 @@ export default new Router({
           path: 'sweetalert2',
           name: 'Sweetalert2',
           component: Sweetalert2
+        },
+        {
+          path: 'datatable',
+          name: 'DataTable',
+          component: DataTable
         },
         {
           path: 'footable',
