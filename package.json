@@ -25,6 +25,8 @@
     "jquery-mockjax": "^2.3.0",
     "jquery-validation": "^1.17.0",
     "less-loader": "^4.1.0",
+    "moment": "^2.22.1",
+    "pikaday": "^1.7.0",
     "popper.js": "^1.14.3",
     "select2": "^4.0.6-rc.1",
     "style-loader": "^0.21.0",

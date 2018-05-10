@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-      <Navbar :narbarList="narbarList" />
-      <router-view></router-view>
+    <Navbar :narbarList="narbarList" />
+    <router-view></router-view>
   </div>
 </template>
 
@@ -125,6 +125,23 @@ export default {
             {
               href: '#/loading3',
               hrefName: 'style3'
+            }
+          ]
+        },
+        {
+          hrefName: 'pikaday',
+          childrens: [
+            {
+              href: '#/pikaday2',
+              hrefName: '日歷(moment.js)'
+            },
+            {
+              href: '#/pikaday',
+              hrefName: '雙日歷'
+            },
+            {
+              href: '#/pikaday3',
+              hrefName: '按鈕觸發日歷'
             }
           ]
         }

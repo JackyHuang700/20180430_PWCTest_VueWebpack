@@ -31,6 +31,11 @@ import Loading from '@/components/Loading'
 import Loading2 from '@/components/Loading2'
 import Loading3 from '@/components/Loading3'
 
+// pikaday
+import Pikaday from '@/components/Pikaday'
+import Pikaday2 from '@/components/Pikaday2'
+import Pikaday3 from '@/components/Pikaday3'
+
 Vue.use(Router)
 
 export default new Router({
@@ -145,6 +150,21 @@ export default new Router({
           path: 'loading3',
           name: 'Loading3',
           component: Loading3
+        },
+        {
+          path: 'pikaday',
+          name: 'Pikaday',
+          component: Pikaday
+        },
+        {
+          path: 'pikaday2',
+          name: 'Pikaday2',
+          component: Pikaday2
+        },
+        {
+          path: 'pikaday3',
+          name: 'Pikaday3',
+          component: Pikaday3
         }
       ]
     }
