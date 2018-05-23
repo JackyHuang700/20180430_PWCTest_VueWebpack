@@ -18,6 +18,7 @@ import FooTable2 from '@/components/FooTable2'
 import FooTable3 from '@/components/FooTable3'
 
 import DataTable from '@/components/DataTable'
+import DataTable2 from '@/components/DataTable2'
 
 import Select2 from '@/components/Select2'
 import Select22 from '@/components/Select22'
@@ -35,6 +36,7 @@ import Loading3 from '@/components/Loading3'
 import Pikaday from '@/components/Pikaday'
 import Pikaday2 from '@/components/Pikaday2'
 import Pikaday3 from '@/components/Pikaday3'
+import Pikaday4 from '@/components/Pikaday4'
 
 Vue.use(Router)
 
@@ -85,6 +87,11 @@ export default new Router({
           path: 'datatable',
           name: 'DataTable',
           component: DataTable
+        },
+        {
+          path: 'datatable2',
+          name: 'DataTable2',
+          component: DataTable2
         },
         {
           path: 'footable',
@@ -165,6 +172,11 @@ export default new Router({
           path: 'pikaday3',
           name: 'Pikaday3',
           component: Pikaday3
+        },
+        {
+          path: 'pikaday4',
+          name: 'Pikaday4',
+          component: Pikaday4
         }
       ]
     }

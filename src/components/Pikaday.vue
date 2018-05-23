@@ -82,5 +82,4 @@ export default {
 </script>
 <style lang="css">
 @import 'pikaday/css/pikaday.css';
-@import 'pikaday/css/site.css';
 </style>

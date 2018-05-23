@@ -5,11 +5,16 @@ import MockAdapter from 'axios-mock-adapter'
 // import 'jquery-mockjax'
 
 import { select2List } from './data/select2List'
-import { dataTableList } from './data/dataTableList'
+import {
+  dataTableList,
+  dataTableList2 as dataTableListaa
+
+} from './data/dataTableList'
 
 import {
   apiSelect2Select24GetAll,
-  apiDataTableDataTableGetAll
+  apiDataTableDataTableGetAll,
+  apiDataTableDataTableGetAll2
 } from '../api/api'
 
 export default {
@@ -89,6 +94,18 @@ export default {
         // console.log('dataTableList2', newDataTableList)
         // 回應
         this.responseText = newDataTableList
+      }
+    })
+    $.mockjax({
+      type: 'GET',
+      url: apiDataTableDataTableGetAll2,
+      status: 200,
+      dataType: 'json',
+      responseTime: 150,
+      contentType: 'application/json',
+      response: function () {
+        // 回應
+        this.responseText = dataTableListaa
       }
     })
   }

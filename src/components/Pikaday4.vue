@@ -20,7 +20,7 @@ import {
 } from '../config'
 
 export default {
-  name: 'pikaday',
+  name: 'pikaday4',
   data () {
     return {}
   },
@@ -29,6 +29,18 @@ export default {
     var disable = false
     var field = document.getElementById('datepicker')
     var picker = new Pikaday({
+      // time
+      showTime: true,
+      showMinutes: true,
+      showSeconds: false,
+      use24hour: false,
+      incrementHourBy: 1,
+      incrementMinuteBy: 1,
+      incrementSecondBy: 1,
+      autoClose: true,
+      timeLabel: null, // optional string added to left of time select
+
+      // date
       field: field,
       firstDay: 1,
       minDate: new Date(2000, 0, 1),

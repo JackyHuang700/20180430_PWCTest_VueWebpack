@@ -73,7 +73,11 @@ export default {
           childrens: [
             {
               href: '#/datatable',
-              hrefName: 'DataTable'
+              hrefName: 'DataTable(Server Side)'
+            },
+            {
+              href: '#/datatable2',
+              hrefName: 'DataTable2'
             }
 
           ]
@@ -142,6 +146,10 @@ export default {
             {
               href: '#/pikaday3',
               hrefName: '按鈕觸發日歷'
+            },
+            {
+              href: '#/pikaday4',
+              hrefName: '日曆帶時間'
             }
           ]
         }

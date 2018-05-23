@@ -11,9 +11,10 @@ export const methodGetSelect2Select24GetAll = params => {
 
 // dataTable
 export const apiDataTableDataTableGetAll = '/api/DataTable/DataTableGetAll'
+export const apiDataTableDataTableGetAll2 = '/api/DataTable/DataTableGetAll2'
 
 export const methodGetDataTableDataTableGetAll = params => {
-  return axios.get(apiDataTableDataTableGetAll, {
+  return axios.get(2, {
     params: params
   })
 }
