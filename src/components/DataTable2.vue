@@ -29,28 +29,28 @@
   </div>
 </template>
 <script>
-import 'datatables'
+import 'datatables.net'
+import 'datatables.net-buttons/js/buttons.flash.js'
+import JSZip from 'jszip'
+import pdfMake from 'pdfmake/build/pdfmake'
+import pdfFonts from 'pdfmake/build/vfs_fonts'
+import 'datatables.net-buttons/js/buttons.colVis.js'
+import 'datatables.net-buttons/js/buttons.html5.js'
+import 'datatables.net-buttons/js/buttons.print.js'
+
 import {
   apiDataTableDataTableGetAll2
 } from '../api/api'
 
 export default {
   name: 'datatable2',
-  created () { },
+  created () {
+    // find datatable excel button not showing webpack
+    // https://stackoverflow.com/questions/46829916/npm-datatable-excel-button-not-showing
+    window.JSZip = JSZip
+    pdfMake.vfs = pdfFonts.pdfMake.vfs
+  },
   mounted () {
-    var buttonCommon = {
-      exportOptions: {
-        format: {
-          body: function (data, row, column, node) {
-            // Strip $ from salary column to make it numeric
-            return column === 5
-              ? data.replace(/[$,]/g, '')
-              : data
-          }
-        }
-      }
-    }
-
     $('#example').DataTable({
       ajax: apiDataTableDataTableGetAll2,
       columns: [
@@ -62,17 +62,7 @@ export default {
         { data: 'salary' }
       ],
       dom: 'Bfrtip',
-      buttons: [
-        $.extend(true, {}, buttonCommon, {
-          extend: 'copyHtml5'
-        }),
-        $.extend(true, {}, buttonCommon, {
-          extend: 'excelHtml5'
-        }),
-        $.extend(true, {}, buttonCommon, {
-          extend: 'pdfHtml5'
-        })
-      ]
+      buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
     })
   }
 }
@@ -80,3 +70,4 @@ export default {
 <style lang="css">
 @import 'datatables/media/css/jquery.dataTables.min.css';
 </style>
+ㄣ

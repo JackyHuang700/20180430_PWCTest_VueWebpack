@@ -30,7 +30,7 @@
   </div>
 </template>
 <script>
-import 'datatables'
+import 'datatables.net'
 import {
   apiDataTableDataTableGetAll
 } from '../api/api'

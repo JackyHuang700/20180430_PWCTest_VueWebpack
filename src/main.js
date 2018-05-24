@@ -4,9 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import $ from 'jquery'
-import jquery from 'jquery'
-
 // import footable from 'footable/dist/footable.all.min'
 // import 'footable/css/footable.standalone.min.css'
 
@@ -14,7 +11,11 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 import mock from './mock'
-require('jquery-mockjax')(jquery, window)
+
+// import $ from 'jquery'
+// import jquery from 'jquery'
+window.$ = window.jQuery = require('jquery')
+require('jquery-mockjax')(window.jQuery, window)
 mock.init_jquery()
 
 Vue.use({
