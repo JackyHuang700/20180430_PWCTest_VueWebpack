@@ -54,5 +54,5 @@ export default {
 }
 </script>
 <style lang="css">
-@import 'datatables/media/css/jquery.dataTables.min.css';
+@import 'datatables.net-dt/css/jquery.dataTables.css';
 </style>
