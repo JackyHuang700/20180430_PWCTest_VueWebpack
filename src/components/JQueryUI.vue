@@ -95,14 +95,14 @@ export default {
 }
 
 /* 添加下拉式選單的滾動條 */
-/* .ui-autocomplete {
+.ui-autocomplete {
   max-height: 100px;
   overflow-y: auto;
   overflow-x: hidden;
-} */
+}
 /* IE 6 不支持max-height
    * 我們使用height 代替，但是這會強制菜單總是顯示為那個高度*/
-/* * html .ui-autocomplete {
+* html .ui-autocomplete {
   height: 100px;
-} */
+}
 </style>
