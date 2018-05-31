@@ -38,6 +38,9 @@ import Pikaday2 from '@/components/Pikaday2'
 import Pikaday3 from '@/components/Pikaday3'
 import Pikaday4 from '@/components/Pikaday4'
 
+// JQuery-UI
+import JQueryUI from '@/components/JQueryUI'
+
 Vue.use(Router)
 
 export default new Router({
@@ -52,6 +55,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'jqueryui',
+          name: 'JQueryUI',
+          component: JQueryUI
         },
         {
           path: 'izitoast',

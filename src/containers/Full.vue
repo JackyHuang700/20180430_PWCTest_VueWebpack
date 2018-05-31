@@ -152,6 +152,15 @@ export default {
               hrefName: '日曆帶時間'
             }
           ]
+        },
+        {
+          hrefName: 'JQuery-UI',
+          childrens: [
+            {
+              href: '#/JQueryUI',
+              hrefName: 'autocomplete(Ajax)'
+            }
+          ]
         }
 
       ]

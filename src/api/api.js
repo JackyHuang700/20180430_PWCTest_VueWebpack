@@ -18,3 +18,6 @@ export const methodGetDataTableDataTableGetAll = params => {
     params: params
   })
 }
+
+// JQueryUI
+export const apiDataJQueryUIJQueryUIGetAll = '/api/JQueryUI/JQueryUIGetAll'

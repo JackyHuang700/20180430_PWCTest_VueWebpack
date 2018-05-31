@@ -5,13 +5,14 @@ import MockAdapter from 'axios-mock-adapter'
 // import 'jquery-mockjax'
 
 import { select2List } from './data/select2List'
+import { dataList as jqueryUIList } from './data/jqueryUIList'
 import {
   dataTableList,
   dataTableList2 as dataTableListaa
-
 } from './data/dataTableList'
 
 import {
+  apiDataJQueryUIJQueryUIGetAll,
   apiSelect2Select24GetAll,
   apiDataTableDataTableGetAll,
   apiDataTableDataTableGetAll2
@@ -41,6 +42,70 @@ export default {
 
   // jquery mock
   init_jquery () {
+    // var mockjaxList = [
+    //   // JQueryUI
+    //   {
+    //     url: apiDataJQueryUIJQueryUIGetAll,
+    //     list: jqueryUIList
+    //   },
+    //   // dataTableList
+    //   {
+    //     url: apiDataTableDataTableGetAll2,
+    //     list: dataTableListaa
+    //   }
+    // ]
+
+    // for (var item in mockjaxList) {
+    //   $.mockjax({
+    //     type: 'GET',
+    //     url: mockjaxList[item].url,
+    //     status: 200,
+    //     dataType: 'json',
+    //     responseTime: 150,
+    //     contentType: 'application/json',
+    //     response: function () {
+    //       // 回應
+    //       this.responseText = mockjaxList[item].list
+    //     }
+    //   })
+    // }
+
+    // JQueryUI
+    $.mockjax({
+      type: 'GET',
+      url: apiDataJQueryUIJQueryUIGetAll,
+      status: 200,
+      dataType: 'json',
+      responseTime: 150,
+      contentType: 'application/json',
+      response: function (setting) {
+        var {
+          term
+        } = setting.data
+
+        var results = jqueryUIList.filter(function (item) {
+          return item.value.toLowerCase().indexOf(term.toLowerCase()) > -1
+        }).splice(0, 10)
+
+        // 回應
+        this.responseText = results
+      }
+    })
+
+    // dataTableList
+    $.mockjax({
+      type: 'GET',
+      url: apiDataTableDataTableGetAll2,
+      status: 200,
+      dataType: 'json',
+      responseTime: 150,
+      contentType: 'application/json',
+      response: function () {
+        // 回應
+        this.responseText = dataTableListaa
+      }
+    })
+
     // select2
     $.mockjax({
       type: 'GET',
@@ -94,18 +159,6 @@ export default {
         // console.log('dataTableList2', newDataTableList)
         // 回應
         this.responseText = newDataTableList
-      }
-    })
-    $.mockjax({
-      type: 'GET',
-      url: apiDataTableDataTableGetAll2,
-      status: 200,
-      dataType: 'json',
-      responseTime: 150,
-      contentType: 'application/json',
-      response: function () {
-        // 回應
-        this.responseText = dataTableListaa
       }
     })
   }
