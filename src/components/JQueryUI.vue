@@ -46,7 +46,7 @@ export default {
         source: function (request, response) {
           var term = request.term
           if (term in cache) {
-            response(cache)
+            response(cache[term])
           } else {
             autocompleteAjax(request, function (resp) {
               // cache.push.apply(cache, resp)
