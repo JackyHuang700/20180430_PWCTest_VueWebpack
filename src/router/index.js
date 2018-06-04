@@ -41,6 +41,10 @@ import Pikaday4 from '@/components/Pikaday4'
 // JQuery-UI
 import JQueryUI from '@/components/JQueryUI'
 
+// ChartJs
+import ChartJs from '@/components/ChartJs'
+import ChartJs2 from '@/components/ChartJs2'
+
 Vue.use(Router)
 
 export default new Router({
@@ -60,6 +64,16 @@ export default new Router({
           path: 'jqueryui',
           name: 'JQueryUI',
           component: JQueryUI
+        },
+        {
+          path: 'chartjs',
+          name: 'ChartJs',
+          component: ChartJs
+        },
+        {
+          path: 'chartjs2',
+          name: 'ChartJs2',
+          component: ChartJs2
         },
         {
           path: 'izitoast',

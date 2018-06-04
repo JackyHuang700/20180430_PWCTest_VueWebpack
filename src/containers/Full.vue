@@ -161,6 +161,19 @@ export default {
               hrefName: 'autocomplete(Ajax)'
             }
           ]
+        },
+        {
+          hrefName: 'ChartJs',
+          childrens: [
+            {
+              href: '#/ChartJs',
+              hrefName: 'bar & line'
+            },
+            {
+              href: '#/ChartJs2',
+              hrefName: '多種型態展示'
+            }
+          ]
         }
 
       ]
