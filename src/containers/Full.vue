@@ -174,6 +174,15 @@ export default {
               hrefName: '多種型態展示'
             }
           ]
+        },
+        {
+          hrefName: 'VanillaDataTables',
+          childrens: [
+            {
+              href: '#/VanillaDataTables',
+              hrefName: 'demo'
+            }
+          ]
         }
 
       ]

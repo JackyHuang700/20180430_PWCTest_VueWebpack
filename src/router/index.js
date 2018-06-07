@@ -45,6 +45,9 @@ import JQueryUI from '@/components/JQueryUI'
 import ChartJs from '@/components/ChartJs'
 import ChartJs2 from '@/components/ChartJs2'
 
+// VanillaDataTablesJs
+import VanillaDataTables from '@/components/VanillaDataTables'
+
 Vue.use(Router)
 
 export default new Router({
@@ -59,6 +62,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'vanilladatatables',
+          name: 'VanillaDataTables',
+          component: VanillaDataTables
         },
         {
           path: 'jqueryui',

@@ -4,8 +4,15 @@ import MockAdapter from 'axios-mock-adapter'
 // import 'jquery-mockjax/src/jquery.mockjax.js'
 // import 'jquery-mockjax'
 
-import { select2List } from './data/select2List'
-import { dataList as jqueryUIList } from './data/jqueryUIList'
+import {
+  select2List
+} from './data/select2List'
+import {
+  dataList as jqueryUIList
+} from './data/jqueryUIList'
+import {
+  dataList as vanillaDatatables
+} from './data/vanillaDatatables'
 import {
   dataTableList,
   dataTableList2 as dataTableListaa
@@ -15,7 +22,8 @@ import {
   apiDataJQueryUIJQueryUIGetAll,
   apiSelect2Select24GetAll,
   apiDataTableDataTableGetAll,
-  apiDataTableDataTableGetAll2
+  apiDataTableDataTableGetAll2,
+  apiVanillaDatatablesVanillaDatatablesGetAll
 } from '../api/api'
 
 export default {
@@ -25,7 +33,10 @@ export default {
     mock.onGet(apiSelect2Select24GetAll).reply(config => {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          var { queryStr, pageNo } = config.params
+          var {
+            queryStr,
+            pageNo
+          } = config.params
 
           var newList = pagination(select2List, queryStr, pageNo)
 
@@ -69,6 +80,23 @@ export default {
     //     }
     //   })
     // }
+
+    // vanilla-datatables
+    $.mockjax({
+      type: 'GET',
+      url: apiVanillaDatatablesVanillaDatatablesGetAll,
+      status: 200,
+      dataType: 'json',
+      responseTime: 150,
+      contentType: 'application/json',
+      response: function (setting) {
+        // var {
+        //   term
+        // } = setting.data
+        // 回應
+        this.responseText = vanillaDatatables
+      }
+    })
 
     // JQueryUI
     $.mockjax({
@@ -115,7 +143,10 @@ export default {
       responseTime: 750,
       contentType: 'application/json',
       response: function (settings) {
-        var { queryStr, pageNo } = settings.data
+        var {
+          queryStr,
+          pageNo
+        } = settings.data
 
         var items = pagination(select2List, queryStr, pageNo || 1)
         for (var i in items[0]) {
@@ -140,8 +171,15 @@ export default {
       contentType: 'application/json',
       response: function (settings) {
         console.info('settings: ', settings)
-        var { draw, start, length } = settings.data
-        var { value, regex } = settings.data.search
+        var {
+          draw,
+          start,
+          length
+        } = settings.data
+        var {
+          value,
+          regex
+        } = settings.data.search
 
         console.log('start', start)
         console.log('length', length)
