@@ -15,7 +15,8 @@ import {
 } from './data/vanillaDatatables'
 import {
   dataTableList,
-  dataTableList2 as dataTableListaa
+  dataTableList2 as dataTableListaa,
+  dataTableList3 as dataTableListaaa
 } from './data/dataTableList'
 
 import {
@@ -23,6 +24,7 @@ import {
   apiSelect2Select24GetAll,
   apiDataTableDataTableGetAll,
   apiDataTableDataTableGetAll2,
+  apiDataTableDataTableGetAll3,
   apiVanillaDatatablesVanillaDatatablesGetAll
 } from '../api/api'
 
@@ -123,12 +125,26 @@ export default {
     // dataTableList
     $.mockjax({
       type: 'GET',
+      url: apiDataTableDataTableGetAll3,
+      status: 200,
+      dataType: 'json',
+      responseTime: 150,
+      contentType: 'application/json',
+      response: function (setting) {
+        console.log('asfasdf')
+        // 回應
+        this.responseText = dataTableListaaa
+      }
+    })
+
+    $.mockjax({
+      type: 'GET',
       url: apiDataTableDataTableGetAll2,
       status: 200,
       dataType: 'json',
       responseTime: 150,
       contentType: 'application/json',
-      response: function () {
+      response: function (setting) {
         // 回應
         this.responseText = dataTableListaa
       }

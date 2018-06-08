@@ -78,6 +78,10 @@ export default {
             {
               href: '#/datatable2',
               hrefName: 'DataTable2'
+            },
+            {
+              href: '#/datatable3',
+              hrefName: 'DataTable3'
             }
 
           ]
