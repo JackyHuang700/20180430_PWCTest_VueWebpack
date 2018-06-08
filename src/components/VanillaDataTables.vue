@@ -21,17 +21,7 @@
             </div>
 
             <div class="col-sm-12">
-              <table class="table">
-                <thead>
-                  <th data-hidden="true">#',</th>
-                  <th >Name</th>
-                  <th >Company</th>
-                  <th >Ext</th>
-                  <th >Start</th>
-                  <th >Email</th>
-                  <th data-hidden="true">Phone123</th>
-                </thead>
-              </table>
+              <table class="table"></table>
             </div>
             <div class="col-sm-12">
               <button type="button" id="delete-rows" class="btn btn-danger pull-right invisible">Delete Rows</button>
@@ -54,15 +44,15 @@ export default {
   created () { },
   mounted () {
     var myData = {
-      // headings: [
-      //   '#',
-      //   'Name',
-      //   'Company',
-      //   'Ext.',
-      //   'Start Date',
-      //   'Email',
-      //   'Phone No.'
-      // ],
+      headings: [
+        'id',
+        'Name',
+        'Company',
+        'Ext.',
+        'Start Date',
+        'Email',
+        'Phone No.'
+      ],
       data: [
         [
           '1',
@@ -89,6 +79,7 @@ export default {
     window.DataTable = require('vanilla-datatables/dist/vanilla-dataTables.min.js')
     // console.log(window.DataTable)
     // console.log(typeof window.DataTable === 'function');
+    //
     var datatable
     (function () {
       // Instantiate
@@ -98,7 +89,7 @@ export default {
         //   //   // url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/86186/massive.json'
         // },
         columns: [
-          { select: 1, hidden: true }
+          // { select: 1, hidden: true }
 
         ],
         data: myData,
@@ -107,34 +98,39 @@ export default {
             enabled: true,
             contextMenu: true,
             hiddenColumns: true,
-            menuItems: [{
-              text: "<span class='mdi mdi-lead-pencil'></span> Edit Cell",
-              action: function () {
-                this.editCell()
-              }
-            },
-            {
-              text: "<span class='mdi mdi-lead-pencil'></span> Edit Row",
-              action: function () {
-                this.editRow()
-              }
-            },
-            {
-              separator: true
-            },
-            {
-              text: "<span class='mdi mdi-delete'></span> Remove",
-              action: function () {
-                if (confirm('Are you sure?')) {
-                  this.removeRow()
+            menuItems: [
+              {
+                text: "<span class='mdi mdi-lead-pencil'></span> Edit Cell",
+                action: function () {
+                  this.editCell()
+                }
+              },
+              {
+                text: "<span class='mdi mdi-lead-pencil'></span> Edit Row",
+                action: function () {
+                  this.editRow()
+                }
+              },
+              {
+                separator: true
+              },
+              {
+                text: "<span class='mdi mdi-delete'></span> Remove",
+                action: function () {
+                  if (confirm('Are you sure?')) {
+                    this.removeRow()
+                  }
                 }
               }
-            }
             ]
           }
         }
       })
+      // 隱藏欄位
+      var columns = datatable.columns()
+      columns.hide([0])
 
+      var firstRow = document.querySelector('tr')
       // datatable.on('datatable.ajax.loaded', function () {
       //   // IE9
       //   this.wrapper.className = this.wrapper.className.replace(' dataTable-loading', '')
@@ -145,8 +141,7 @@ export default {
         console.log('editable.save.cell')
         console.log('newValue', newValue)
         console.log('oldValue', oldValue)
-        console.log('cell', cell)
-        console.log('myData', myData)
+        console.log('firstRow.rowIndex', firstRow.rowIndex)
       })
 
       datatable.on('editable.save.row', function (newData, oldData, row) {
@@ -154,9 +149,6 @@ export default {
         console.log('editable.save.row')
         console.log('newData', newData)
         console.log('oldData', oldData)
-        console.log('row', row)
-        debugger
-        console.log('myData', myData)
       })
 
       console.log(datatable.editable)
@@ -166,24 +158,18 @@ export default {
     (function () {
       var addColumnDom = document.getElementById('addColumn')
       addColumnDom.addEventListener('click', function (e) {
-        // datatable.columns().add([
-        //   'Genevieve U. Watts',
-        //   'Eget Incorporated',
-        //   '9557',
-        //   '07/18/2017',
-        //   'Nullam.vitae@egestas.edu',
-        //   '0800 106980'
+        // datatable.insert([
+        //   {
+        //     'id': 3,
+        //     'Name': 'Hedwig F. Nguyen',
+        //     'Company': 'Arcu Vel Foundation',
+        //     'Ext.': '9875',
+        //     'Start Date': '03/27/2017',
+        //     'Email': 'nunc.ullamcorper@metusvitae.com',
+        //     'Phone No.': '070 8206 9605'
+        //   }
         // ])
-        datatable.insert([
-          {
-            'Name': 'Hedwig F. Nguyen',
-            'Company': 'Arcu Vel Foundation',
-            'Ext.': '9875',
-            'Start Date': '03/27/2017',
-            'Email': 'nunc.ullamcorper@metusvitae.com',
-            'Phone No.': '070 8206 9605'
-          }
-        ])
+
       })
     }())
   }
