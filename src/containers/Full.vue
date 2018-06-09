@@ -82,6 +82,14 @@ export default {
             {
               href: '#/datatable3',
               hrefName: 'DataTable3'
+            },
+            {
+              href: '#/datatable4',
+              hrefName: '批次新增'
+            },
+            {
+              href: '#/datatable5',
+              hrefName: 'DataTable5'
             }
 
           ]

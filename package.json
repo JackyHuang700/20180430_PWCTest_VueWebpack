@@ -22,6 +22,7 @@
     "datatables.net": "^1.10.16",
     "datatables.net-buttons": "^1.5.1",
     "datatables.net-dt": "^1.10.16",
+    "datatables.net-rowreorder": "^1.2.3",
     "datatables.net-select": "^1.2.5",
     "eslint-plugin-html": "^4.0.3",
     "footable": "^2.0.6",

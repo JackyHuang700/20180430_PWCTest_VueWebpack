@@ -19,7 +19,9 @@ import FooTable3 from '@/components/FooTable3'
 
 import DataTable from '@/components/DataTable'
 import DataTable2 from '@/components/DataTable2'
-import DataTable3 from '@/components/DataTable3'
+// import DataTable3 from '@/components/DataTable3'
+import DataTable4 from '@/components/DataTable4'
+import DataTable5 from '@/components/DataTable5'
 
 import Select2 from '@/components/Select2'
 import Select22 from '@/components/Select22'
@@ -124,10 +126,20 @@ export default new Router({
           name: 'DataTable2',
           component: DataTable2
         },
+        // {
+        //   path: 'datatable3',
+        //   name: 'DataTable3',
+        //   component: DataTable3
+        // },
         {
-          path: 'datatable3',
-          name: 'DataTable3',
-          component: DataTable3
+          path: 'datatable4',
+          name: 'DataTable4',
+          component: DataTable4
+        },
+        {
+          path: 'datatable5',
+          name: 'DataTable5',
+          component: DataTable5
         },
         {
           path: 'footable',
