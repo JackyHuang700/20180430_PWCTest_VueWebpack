@@ -2,12 +2,14 @@
   <div class="container-fluid mt-4">
     <div class="row">
 
-      <div class="col-12 my-4">
+      <div class="col-12 mtd-4">
         <div class="card">
-          <div class="card-header"></div>
+          <div class="card-header">
+              <i class="fa fa-wpforms" aria-hidden="true"></i>操作
+          </div>
           <div class="card-body">
             <div class="addRow text-left">
-              <button id="addRow" class="btn btn-primary">Add New Row</button>
+              <button id="addRow" class="btn btn-primary">新增欄位</button>
             </div>
           </div>
           <div class="card-footer"></div>
@@ -16,15 +18,17 @@
 
       <div class="col-12">
         <div class="card">
-          <div class="card-header">動態新增Table</div>
+          <div class="card-header">
+            <i class="fa fa-wpforms" aria-hidden="true"></i>動態新增Table
+            </div>
           <div class="card-body">
             <table id="example" class="display" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                  <th>order</th>
-                  <th>name</th>
-                  <th>country</th>
-                  <th>delete</th>
+                  <th class="text-center">...</th>
+                  <th class="text-center">...</th>
+                  <th class="text-center">...</th>
+                  <th class="text-center">操作</th>
                 </tr>
               </thead>
             </table>
@@ -79,6 +83,7 @@ export default {
         //   dataSrc: 'order'
         // },
         bPaginate: false,
+        searching: false,
         order: [
           [ 0, 'desc' ]
         ],
@@ -97,16 +102,20 @@ export default {
             'data': '',
             'orderable': false,
             'render': function (data, type, row, meta) {
-              return ('<i class="fa fa-minus-square" aria-hidden="true"></i>')
+              return ('<i class="fa fa-minus-square text-red" aria-hidden="true"></i>')
             }
           }
         ],
         // 刪除單筆資料
         'initComplete': function (oSettings) {
           $(this).on('click', 'i.fa.fa-minus-square', function (e) {
-            table.row($(this).closest('tr')).remove().draw()
-            // console.log(table.data())
-            UpdateIndex()
+            var confirm2 = confirm('確定刪除?')
+            if (confirm2) {
+              table.row($(this).closest('tr')).remove().draw()
+              // console.log(table.data())
+
+              UpdateIndex()
+            }
           })
         }
 
