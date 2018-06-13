@@ -37,7 +37,7 @@ const count = [
 ]
 for (var i in count) {
   select2List.push({
-    id: i - 0 - 0 + 1,
+    id: (i - 0) + 1,
     name: count[i]
   })
 }

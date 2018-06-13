@@ -63,9 +63,6 @@
 import 'datatables.net'
 import 'datatables.net-rowreorder/js/dataTables.rowReorder.min.js'
 import {
-  language
-} from '../config/dataTable'
-import {
   apiDataTableDataTableGetAll4
 } from '../api/api'
 
@@ -120,8 +117,7 @@ export default {
               UpdateIndex()
             }
           })
-        },
-        'language': language
+        }
       })
 
       //

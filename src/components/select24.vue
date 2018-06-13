@@ -1,13 +1,11 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="row">
 
         <select id="sel_menu3" class="js-data-example-ajax form-control">
-          <option value="" selected="selected">请选择</option>
+          <option value="" selected="selected">請選擇</option>
         </select>
 
-      </div>
     </div>
   </div>
 </template>
@@ -19,16 +17,11 @@ import {
   methodGetSelect2Select24GetAll
 } from '../api/api'
 import 'select2/dist/js/select2.min.js'
+import { select2Module } from '../config/select2.js'
 export default {
   name: 'select24',
   created () { },
   mounted () {
-    // 製作下拉式選單
-    function formatRepoProvince (repo) {
-      if (repo['loading'] === undefined || repo.loading) return repo.text
-      return '<div>' + repo.name + '</div>'
-    }
-
     // 远程筛选
     $('#sel_menu3').select2({
       ajax: {
@@ -56,10 +49,16 @@ export default {
       escapeMarkup: function (markup) { return markup }, // let our custom formatter work
       minimumInputLength: 1,
       templateResult: formatRepoProvince, // omitted for brevity, see the source of this page
-      templateSelection: formatRepoProvince // omitted for brevity, see the source of this page
+      templateSelection: formatRepoProvince, // omitted for brevity, see the source of this page
+      language: select2Module.language
     })
-  },
-  methods: {}
+
+    // 製作下拉式選單
+    function formatRepoProvince (repo) {
+      if (repo['loading'] === undefined || repo.loading) return repo.text
+      return '<div>' + repo.name + '</div>'
+    }
+  }
 }
 </script>
 <style lang="css">
