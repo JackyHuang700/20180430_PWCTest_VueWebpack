@@ -51,6 +51,9 @@ import ChartJs2 from '@/components/ChartJs2'
 // VanillaDataTablesJs
 import VanillaDataTables from '@/components/VanillaDataTables'
 
+// jquery-maskmoney
+import jQueryMaskmoney from '@/components/jQueryMaskmoney'
+
 Vue.use(Router)
 
 export default new Router({
@@ -65,6 +68,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'jquerymaskmoney',
+          name: 'jQueryMaskmoney',
+          component: jQueryMaskmoney
         },
         {
           path: 'vanilladatatables',

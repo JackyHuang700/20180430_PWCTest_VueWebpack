@@ -195,6 +195,15 @@ export default {
               hrefName: 'demo'
             }
           ]
+        },
+        {
+          hrefName: 'jQueryMaskmoney',
+          childrens: [
+            {
+              href: '#/jQueryMaskmoney',
+              hrefName: 'demo'
+            }
+          ]
         }
 
       ]
