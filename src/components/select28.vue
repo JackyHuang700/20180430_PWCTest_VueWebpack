@@ -3,12 +3,28 @@
     <div class="row">
       <div class="col-12">
 
-        <select class="js-select2">
-          <option>Select A</option>
-          <option>Select B</option>
-          <option>Select C</option>
-          <option>Select D</option>
-        </select>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+              <div class="card">
+                <div class="card-header"></div>
+                <div class="card-body">
+                  <select class="js-select2">
+                    <option>Select A</option>
+                    <option>Select B</option>
+                    <option>Select C</option>
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -21,13 +37,18 @@ export default {
   name: 'select24',
   created () { },
   mounted () {
-    $('.js-select2').select2()
+    $('.js-select2').select2({
+      dropdownParent: $('#modal')
+    })
   },
   methods: {}
 }
 </script>
 <style lang="css">
 @import 'select2/dist/css/select2.min.css';
+
+/* 解Bug */
+
 </style>
 
 

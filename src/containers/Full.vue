@@ -124,6 +124,10 @@ export default {
             {
               href: '#/select27',
               hrefName: '單、多選，change style</br>'
+            },
+            {
+              href: '#/select28',
+              hrefName: '解決與Modal共用的Bug'
             }
           ]
         },

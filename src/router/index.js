@@ -30,6 +30,7 @@ import Select24 from '@/components/Select24'
 import Select25 from '@/components/Select25'
 import Select26 from '@/components/Select26'
 import Select27 from '@/components/Select27'
+import Select28 from '@/components/Select28'
 
 import Loading from '@/components/Loading'
 import Loading2 from '@/components/Loading2'
@@ -198,6 +199,11 @@ export default new Router({
           path: 'select27',
           name: 'Select27',
           component: Select27
+        },
+        {
+          path: 'select28',
+          name: 'Select28',
+          component: Select28
         },
         {
           path: 'loading',
