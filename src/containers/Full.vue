@@ -208,6 +208,19 @@ export default {
               hrefName: 'demo'
             }
           ]
+        },
+        {
+          hrefName: '版次比較',
+          childrens: [
+            {
+              href: '#/Diff2html',
+              hrefName: 'Diff2html_Demo'
+            },
+            {
+              href: '#/HtmldiffJs',
+              hrefName: 'HtmldiffJs_Demo'
+            }
+          ]
         }
 
       ]

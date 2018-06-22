@@ -55,6 +55,12 @@ import VanillaDataTables from '@/components/VanillaDataTables'
 // jquery-maskmoney
 import jQueryMaskmoney from '@/components/jQueryMaskmoney'
 
+// Diff2html
+import Diff2html from '@/components/Diff2html'
+
+// HtmldiffJs
+import HtmldiffJs from '@/components/HtmldiffJs'
+
 Vue.use(Router)
 
 export default new Router({
@@ -239,6 +245,16 @@ export default new Router({
           path: 'pikaday4',
           name: 'Pikaday4',
           component: Pikaday4
+        },
+        {
+          path: 'diff2html',
+          name: 'Diff2html',
+          component: Diff2html
+        },
+        {
+          path: 'htmldiffjs',
+          name: 'HtmldiffJs',
+          component: HtmldiffJs
         }
       ]
     }
