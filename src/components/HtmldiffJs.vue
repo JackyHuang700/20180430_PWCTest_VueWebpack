@@ -1922,16 +1922,16 @@ export default {
   created () { },
   mounted () {
     (function () {
-      let oldHtml = document.getElementById('oldHtml')
-      let newHtml = document.getElementById('newHtml')
-      let diffHtml = document.getElementById('htmlDiff')
+      var oldHtml = document.getElementById('oldHtml')
+      var newHtml = document.getElementById('newHtml')
+      var diffHtml = document.getElementById('htmlDiff')
 
       diffHtml.innerHTML = HtmlDiff.execute(oldHtml.innerHTML, newHtml.innerHTML)
     }());
     (function () {
-      let oldHtml = document.getElementById('compareTemplate')
-      let newHtml = document.getElementById('compareTemplate2')
-      let diffHtml = document.getElementById('htmlDiff2')
+      var oldHtml = document.getElementById('compareTemplate')
+      var newHtml = document.getElementById('compareTemplate2')
+      var diffHtml = document.getElementById('htmlDiff2')
 
       diffHtml.innerHTML = HtmlDiff.execute(oldHtml.innerHTML, newHtml.innerHTML)
     }())
