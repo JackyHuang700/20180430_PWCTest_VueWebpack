@@ -145,6 +145,18 @@ export default {
             {
               href: '#/loading3',
               hrefName: 'style3'
+            },
+            {
+              href: '#/loading4',
+              hrefName: 'pace-loading套件'
+            },
+            {
+              href: '#/loading5',
+              hrefName: 'pace-loading套件(在中間)'
+            },
+            {
+              href: '#/loading6',
+              hrefName: 'pace-loading套件(在上面)'
             }
           ]
         },

@@ -35,6 +35,9 @@ import Select28 from '@/components/Select28'
 import Loading from '@/components/Loading'
 import Loading2 from '@/components/Loading2'
 import Loading3 from '@/components/Loading3'
+import Loading4 from '@/components/Loading4'
+import Loading5 from '@/components/Loading5'
+import Loading6 from '@/components/Loading6'
 
 // pikaday
 import Pikaday from '@/components/Pikaday'
@@ -225,6 +228,21 @@ export default new Router({
           path: 'loading3',
           name: 'Loading3',
           component: Loading3
+        },
+        {
+          path: 'loading4',
+          name: 'Loading4',
+          component: Loading4
+        },
+        {
+          path: 'loading5',
+          name: 'Loading5',
+          component: Loading5
+        },
+        {
+          path: 'loading6',
+          name: 'Loading6',
+          component: Loading6
         },
         {
           path: 'pikaday',
