@@ -157,6 +157,10 @@ export default {
             {
               href: '#/loading6',
               hrefName: 'pace-loading套件(在上面)'
+            },
+            {
+              href: '#/loading7',
+              hrefName: 'loadingio網站Link'
             }
           ]
         },
