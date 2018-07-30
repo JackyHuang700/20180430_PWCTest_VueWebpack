@@ -65,6 +65,10 @@ import Diff2html from '@/components/Diff2html'
 // HtmldiffJs
 import HtmldiffJs from '@/components/HtmldiffJs'
 
+// component
+import Component from '@/components/Component'
+import Component2 from '@/components/Component2'
+
 Vue.use(Router)
 
 export default new Router({
@@ -79,6 +83,16 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'component',
+          name: 'component',
+          component: Component
+        },
+        {
+          path: 'component2',
+          name: 'component2',
+          component: Component2
         },
         {
           path: 'jquerymaskmoney',

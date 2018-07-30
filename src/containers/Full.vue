@@ -237,7 +237,21 @@ export default {
               hrefName: 'HtmldiffJs_Demo'
             }
           ]
-        }
+        },
+        {
+          hrefName: '元件練習',
+          childrens: [
+            {
+              href: '#/component',
+              hrefName: 'slider menu'
+            },
+            {
+              href: '#/component2',
+              hrefName: 'slider menu(keyframes)'
+            },
+
+          ]
+        },
 
       ]
 

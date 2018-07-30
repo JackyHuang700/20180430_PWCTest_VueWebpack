@@ -9,6 +9,7 @@ import router from './router'
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
+import '../static/myStyle.css'
 
 import mock from './mock'
 
