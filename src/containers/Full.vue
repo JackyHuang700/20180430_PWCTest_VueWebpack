@@ -249,6 +249,10 @@ export default {
               href: '#/component2',
               hrefName: 'slider menu(keyframes)'
             },
+            {
+              href: '#/component3',
+              hrefName: 'slider menu in NavBar'
+            },
 
           ]
         },

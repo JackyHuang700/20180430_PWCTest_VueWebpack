@@ -68,6 +68,7 @@ import HtmldiffJs from '@/components/HtmldiffJs'
 // component
 import Component from '@/components/Component'
 import Component2 from '@/components/Component2'
+import Component3 from '@/components/Component3'
 
 Vue.use(Router)
 
@@ -93,6 +94,11 @@ export default new Router({
           path: 'component2',
           name: 'component2',
           component: Component2
+        },
+        {
+          path: 'component3',
+          name: 'component3',
+          component: Component3
         },
         {
           path: 'jquerymaskmoney',
