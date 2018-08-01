@@ -261,6 +261,10 @@ export default {
               href: '#/component5',
               hrefName: '滿版式網頁版型'
             },
+            {
+              href: '#/component6',
+              hrefName: 'animation 影響與不影響其他物件操作方式 & 重新套用animation'
+            },
 
           ]
         },
