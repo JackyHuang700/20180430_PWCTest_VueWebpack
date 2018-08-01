@@ -253,6 +253,14 @@ export default {
               href: '#/component3',
               hrefName: 'slider menu in NavBar'
             },
+            {
+              href: '#/component4',
+              hrefName: 'float 排版'
+            },
+            {
+              href: '#/component5',
+              hrefName: '滿版式網頁版型'
+            },
 
           ]
         },
