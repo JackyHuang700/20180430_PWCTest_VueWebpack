@@ -73,6 +73,9 @@ import Component4 from '@/components/Component4'
 import Component5 from '@/components/Component5'
 import Component6 from '@/components/Component6'
 
+// 排版
+import Typesetting from '@/components/Typesetting'
+
 Vue.use(Router)
 
 export default new Router({
@@ -87,6 +90,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'typesetting',
+          name: 'Typesetting',
+          component: Typesetting
         },
         {
           path: 'component',

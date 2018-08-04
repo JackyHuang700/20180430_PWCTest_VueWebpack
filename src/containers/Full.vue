@@ -16,7 +16,6 @@ export default {
   },
   data () {
     return {
-
       narbarList: [
         {
           href: '#/',
@@ -91,7 +90,6 @@ export default {
               href: '#/datatable5',
               hrefName: 'DataTable5'
             }
-
           ]
         },
         {
@@ -263,19 +261,24 @@ export default {
             },
             {
               href: '#/component6',
-              hrefName: 'animation 影響與不影響其他物件操作方式 & 重新套用animation'
-            },
-
+              hrefName:
+                'animation 影響與不影響其他物件操作方式 & 重新套用animation'
+            }
           ]
         },
-
+        {
+          hrefName: '排版',
+          childrens: [
+            {
+              href: '#/typesetting',
+              hrefName: 'float排版'
+            }
+          ]
+        }
       ]
-
     }
   },
-  computed: {
-
-  }
+  computed: {}
 }
 </script>
 <style>
