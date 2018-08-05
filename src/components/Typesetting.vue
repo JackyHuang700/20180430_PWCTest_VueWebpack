@@ -209,9 +209,6 @@ summary {
   }
 }
 @media only screen and (max-width: 320px) {
-  /* .wrap {
-	width: 32px;
-} */
   .product_list li {
     background: rgb(18, 227, 84); /* 黃色背景 */
     width: 96%;

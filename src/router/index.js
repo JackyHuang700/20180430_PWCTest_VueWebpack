@@ -75,6 +75,7 @@ import Component6 from '@/components/Component6'
 
 // 排版
 import Typesetting from '@/components/Typesetting'
+import Typesetting2 from '@/components/Typesetting2'
 
 Vue.use(Router)
 
@@ -95,6 +96,11 @@ export default new Router({
           path: 'typesetting',
           name: 'Typesetting',
           component: Typesetting
+        },
+        {
+          path: 'typesetting2',
+          name: 'Typesetting2',
+          component: Typesetting2
         },
         {
           path: 'component',

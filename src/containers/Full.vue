@@ -272,7 +272,11 @@ export default {
             {
               href: '#/typesetting',
               hrefName: 'float排版'
-            }
+            },
+            {
+              href: '#/typesetting2',
+              hrefName: '排版 & footer alway in bottom'
+            },
           ]
         }
       ]
