@@ -267,6 +267,15 @@ export default {
           ]
         },
         {
+          hrefName: '輪播套件',
+          childrens: [
+            {
+              href: '#/slickcarousel',
+              hrefName: 'slick-carousel',
+            },
+          ]
+        },
+        {
           hrefName: '排版',
           childrens: [
             {
@@ -276,6 +285,22 @@ export default {
             {
               href: '#/typesetting2',
               hrefName: '排版 & footer alway in bottom'
+            },
+            {
+              href: '#/typesetting3',
+              hrefName: '使用%對width進行排版'
+            },
+            {
+              href: '#/typesetting4',
+              hrefName: '使用%對width進行圖片(img)排版'
+            },
+            {
+              href: '#/typesetting5',
+              hrefName: 'menu rwd'
+            },
+            {
+              href: '#/typesetting6',
+              hrefName: '某種排版設計'
             },
           ]
         }

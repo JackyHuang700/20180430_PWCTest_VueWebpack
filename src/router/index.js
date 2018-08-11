@@ -76,6 +76,13 @@ import Component6 from '@/components/Component6'
 // 排版
 import Typesetting from '@/components/Typesetting'
 import Typesetting2 from '@/components/Typesetting2'
+import Typesetting3 from '@/components/Typesetting3'
+import Typesetting4 from '@/components/Typesetting4'
+import Typesetting5 from '@/components/Typesetting5'
+import Typesetting6 from '@/components/Typesetting6'
+
+// 輪播套件
+import SlickCarousel from '@/components/SlickCarousel'
 
 Vue.use(Router)
 
@@ -93,6 +100,11 @@ export default new Router({
           component: HelloWorld
         },
         {
+          path: 'slickcarousel',
+          name: 'SlickCarousel',
+          component: SlickCarousel
+        },
+        {
           path: 'typesetting',
           name: 'Typesetting',
           component: Typesetting
@@ -101,6 +113,26 @@ export default new Router({
           path: 'typesetting2',
           name: 'Typesetting2',
           component: Typesetting2
+        },
+        {
+          path: 'typesetting3',
+          name: 'Typesetting3',
+          component: Typesetting3
+        },
+        {
+          path: 'typesetting4',
+          name: 'Typesetting4',
+          component: Typesetting4
+        },
+        {
+          path: 'typesetting5',
+          name: 'Typesetting5',
+          component: Typesetting5
+        },
+        {
+          path: 'typesetting6',
+          name: 'Typesetting6',
+          component: Typesetting6
         },
         {
           path: 'component',
