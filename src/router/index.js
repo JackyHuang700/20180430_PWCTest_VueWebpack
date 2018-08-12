@@ -83,6 +83,7 @@ import Typesetting6 from '@/components/Typesetting6'
 
 // 輪播套件
 import SlickCarousel from '@/components/SlickCarousel'
+import OwlCarousel2 from '@/components/OwlCarousel2'
 
 Vue.use(Router)
 
@@ -103,6 +104,11 @@ export default new Router({
           path: 'slickcarousel',
           name: 'SlickCarousel',
           component: SlickCarousel
+        },
+        {
+          path: 'owlcarousel2',
+          name: 'OwlCarousel2',
+          component: OwlCarousel2
         },
         {
           path: 'typesetting',

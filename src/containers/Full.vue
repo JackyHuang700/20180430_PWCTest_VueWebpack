@@ -270,6 +270,10 @@ export default {
           hrefName: '輪播套件',
           childrens: [
             {
+              href: '#/owlcarousel2',
+              hrefName: 'owl.carousel2',
+            },
+            {
               href: '#/slickcarousel',
               hrefName: 'slick-carousel',
             },

@@ -1,7 +1,13 @@
 <template>
-  <div class="container-fluid mt-4">
+  <div class="container mt-4">
     <div class="row">
-      <div class="col-12 ">
+      <div class="col-12">
+        <a href="http://kenwheeler.github.io/slick/" target="_blank">
+          <div class="alert alert-success shadow" role="alert">官網連結</div>
+        </a>
+
+      </div>
+      <div class="col-12">
         <div class="alert alert-primary shadow" role="alert">多圖片顯示</div>
         <section class="vertical-center-4 slider">
           <div>
@@ -207,4 +213,5 @@ body {
 .slick-current {
   opacity: 1;
 }
+
 </style>

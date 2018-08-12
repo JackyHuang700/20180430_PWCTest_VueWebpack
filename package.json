@@ -38,6 +38,7 @@
     "jszip": "^3.1.5",
     "less-loader": "^4.1.0",
     "moment": "^2.22.1",
+    "owl.carousel2": "^2.2.1",
     "pace-js": "^1.0.2",
     "pdfmake": "^0.1.36",
     "pikaday": "^1.7.0",
