@@ -263,7 +263,11 @@ export default {
               href: '#/component6',
               hrefName:
                 'animation 影響與不影響其他物件操作方式 & 重新套用animation'
-            }
+            },
+            {
+              href: '#/component7',
+              hrefName: 'loading - laravel後台登入畫面'
+            },
           ]
         },
         {
@@ -305,6 +309,10 @@ export default {
             {
               href: '#/typesetting6',
               hrefName: '某種排版設計'
+            },
+            {
+              href: '#/typesetting7',
+              hrefName: '垂直置中'
             },
           ]
         }
