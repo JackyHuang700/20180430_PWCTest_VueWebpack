@@ -277,6 +277,10 @@ export default {
               href: '#/component7',
               hrefName: 'laravel基底後台 - login(後台登入畫面)'
             },
+            {
+              href: '#/component8',
+              hrefName: 'laravel基底後台 - mulit components'
+            },
           ]
         },
         {
@@ -322,6 +326,10 @@ export default {
             {
               href: '#/typesetting7',
               hrefName: '垂直置中'
+            },
+            {
+              href: '#/typesetting9',
+              hrefName: '垂直&水平置中'
             },
             {
               href: '#/typesetting8',

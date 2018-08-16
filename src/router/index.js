@@ -73,6 +73,7 @@ import Component4 from '@/components/Component4'
 import Component5 from '@/components/Component5'
 import Component6 from '@/components/Component6'
 import Component7 from '@/components/Component7'
+import Component8 from '@/components/Component8'
 
 // 排版
 import Typesetting from '@/components/Typesetting'
@@ -83,6 +84,7 @@ import Typesetting5 from '@/components/Typesetting5'
 import Typesetting6 from '@/components/Typesetting6'
 import Typesetting7 from '@/components/Typesetting7'
 import Typesetting8 from '@/components/Typesetting8'
+import Typesetting9 from '@/components/Typesetting9'
 
 // 輪播套件
 import SlickCarousel from '@/components/SlickCarousel'
@@ -154,6 +156,11 @@ export default new Router({
           component: Typesetting8
         },
         {
+          path: 'typesetting9',
+          name: 'Typesetting9',
+          component: Typesetting9
+        },
+        {
           path: 'component',
           name: 'component',
           component: Component
@@ -187,6 +194,11 @@ export default new Router({
           path: 'component7',
           name: 'Component7',
           component: Component7
+        },
+        {
+          path: 'component8',
+          name: 'Component8',
+          component: Component8
         },
         {
           path: 'jquerymaskmoney',
