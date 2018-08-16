@@ -224,6 +224,15 @@ export default {
           ]
         },
         {
+          hrefName: 'mulit chart 套件',
+          childrens: [
+            {
+              href: '#/',
+              hrefName: 'Highcharts - '
+            }
+          ]
+        },
+        {
           hrefName: '版次比較',
           childrens: [
             {
@@ -266,7 +275,7 @@ export default {
             },
             {
               href: '#/component7',
-              hrefName: 'loading - laravel後台登入畫面'
+              hrefName: 'laravel基底後台 - login(後台登入畫面)'
             },
           ]
         },
@@ -313,6 +322,10 @@ export default {
             {
               href: '#/typesetting7',
               hrefName: '垂直置中'
+            },
+            {
+              href: '#/typesetting8',
+              hrefName: '各種排版參考 - 多種圖片顯示參考'
             },
           ]
         }

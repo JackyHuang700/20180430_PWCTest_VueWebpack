@@ -1,12 +1,20 @@
 <template>
+  <!-- 原來組件參考: https://codepen.io/flannerydesigns/pen/dPYzNR -->
   <div class="vid-container">
     <img class="bgvid" src="../assets/compoent7.jpg" alt="">
     <div class="inner-container">
       <img class="bgvidBlur" src="../assets/compoent7.jpg" alt="">
       <div class="box">
         <h4>Hello</h4>
-        <input type="text" placeholder="帳號" />
-        <input type="text" placeholder="密碼" />
+        <div class="column">
+          <label for="account">帳號</label>
+          <input type="text" id="account" placeholder="" />
+        </div>
+        <div class="column">
+          <label for="password">密碼</label>
+          <input type="text" id="password" placeholder="" />
+        </div>
+
         <button type="submit">登入</button>
         <p>
           <span>忘記密碼</span>
@@ -29,6 +37,9 @@ nav.navbar {
 /* 內容開始 */
 * {
   box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -73,23 +84,25 @@ body {
   top: -198%;
   left: -50%;
 
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
   z-index: -1;
 }
 
 .inner-container {
   height: 400px;
-  width: 50%;
+  width: 35%;
+  max-width: 100%;
   display: block;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.43);
+  box-shadow: 0 0 8px rgba(218, 217, 217, 0.43);
   z-index: 1;
   position: relative;
   overflow: hidden;
-  transition: width .3s linear;
+  transition: width 0.3s linear;
+  border-radius: 10px;
 }
 
 .box {
@@ -107,18 +120,40 @@ body {
   font-size: 30px;
   text-align: center;
   padding: 30px 0;
+  margin-bottom: 0;
+}
+
+.box .column {
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  /* border: 1px solid red; */
+}
+
+.box label {
+  /* display: inline-block; */
+  width: 30%;
+  height: 48px;
+  line-height: 48px;
+  float: left;
+  text-align: right;
+  padding-right: 20px;
+  /* padding: 6px; */
+  font-size: 20px;
+  margin-bottom: 0px;
 }
 
 .box input {
-  display: block;
-  width: 300px;
-  height: auto;
-  margin: 20px auto;
-  padding: 15px;
+  display: inline-block;
+  width: 70%;
+  height: 48px;
+  padding: 10px;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.13);
-  border: 0;
-    transition: width .3s linear;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(102, 102, 102, 0.423);
+  border-radius: 5px;
+  transition: width 0.3s linear;
 }
 
 .box inpnut:focus,
@@ -138,15 +173,15 @@ body {
   display: block;
   cursor: pointer;
   border-radius: 5px;
-  transition: background-color .3s linear, transform .3s linear;
-    transition: width .3s linear;
+  transition: width 0.3s linear, background-color 0.3s linear,
+    transform 0.2s linear;
 }
 
 .box button[type='submit']:active {
   background-color: hsla(145, 63%, 42%, 0.459);
 }
 
-.box button[type='submit']:hover{
+.box button[type='submit']:hover {
   background-color: #44de84;
   transform: scale(1.1);
 }
@@ -159,19 +194,35 @@ body {
 .box p span {
   cursor: pointer;
   color: #666;
-  transition: color .3s linear;
+  transition: color 0.3s linear;
 }
 .box p span:hover {
   color: rgb(174, 174, 174);
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 680px) {
   .inner-container {
     width: 75%;
+    height: auto;
+  }
+
+  .box h4 {
+    font-size: 25px;
+    padding: 15px 0 10px 0;
+  }
+
+  .box .column {
+    width: 85%;
+  }
+
+  .box label {
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
   }
 
   .box input {
-    width: 90%;
+    width: 100%;
   }
 
   .box button[type='submit'] {

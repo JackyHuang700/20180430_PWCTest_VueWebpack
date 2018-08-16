@@ -82,6 +82,7 @@ import Typesetting4 from '@/components/Typesetting4'
 import Typesetting5 from '@/components/Typesetting5'
 import Typesetting6 from '@/components/Typesetting6'
 import Typesetting7 from '@/components/Typesetting7'
+import Typesetting8 from '@/components/Typesetting8'
 
 // 輪播套件
 import SlickCarousel from '@/components/SlickCarousel'
@@ -146,6 +147,11 @@ export default new Router({
           path: 'typesetting7',
           name: 'Typesetting7',
           component: Typesetting7
+        },
+        {
+          path: 'typesetting8',
+          name: 'Typesetting8',
+          component: Typesetting8
         },
         {
           path: 'component',
