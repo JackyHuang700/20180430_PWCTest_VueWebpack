@@ -1,5 +1,5 @@
 <template>
-  <div class="conatiner-fluid">
+  <div class="conatiner-fluid mt-5">
     <div class="row">
       <section class="col-6 boxShadow">
         <div class="alert alert-secondary" role="alert">一</div>
@@ -10,7 +10,7 @@
           <b>注意:僅適用單個垂直置中</b>
         </p>
         <p class="text-left">
-          <b>注意:多個Dom會重疊</b>
+          <b>注意:多個Dom會 <span style="color:red;">重疊</span> </b>
         </p>
         <pre class="text-left">
 .redbox,
