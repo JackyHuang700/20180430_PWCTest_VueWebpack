@@ -90,6 +90,9 @@ import Typesetting9 from '@/components/Typesetting9'
 import SlickCarousel from '@/components/SlickCarousel'
 import OwlCarousel2 from '@/components/OwlCarousel2'
 
+// 參考資訊
+import Reference from '@/components/Reference'
+
 Vue.use(Router)
 
 export default new Router({
@@ -104,6 +107,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'reference',
+          name: 'Reference',
+          component: Reference
         },
         {
           path: 'slickcarousel',

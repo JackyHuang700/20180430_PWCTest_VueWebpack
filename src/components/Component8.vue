@@ -101,6 +101,7 @@
           <div class="footer">Footer</div>
         </div>
       </section>
+      <section class="col-md-3"></section>
     </div>
   </div>
 </template>
@@ -270,7 +271,7 @@ body {
   line-height: 50px;
   height: auto;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   border-radius: 5px 5px 0 0;
   color: white;
@@ -295,6 +296,7 @@ body {
   color: #666;
   font-size: 15px;
   padding: 0 10px;
+  font-weight: 500;
 }
 
 .card2StyleBGC {

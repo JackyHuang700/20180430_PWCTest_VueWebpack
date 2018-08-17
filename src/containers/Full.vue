@@ -246,6 +246,19 @@ export default {
           ]
         },
         {
+          hrefName: '輪播套件',
+          childrens: [
+            {
+              href: '#/owlcarousel2',
+              hrefName: 'owl.carousel2',
+            },
+            {
+              href: '#/slickcarousel',
+              hrefName: 'slick-carousel',
+            },
+          ]
+        },
+        {
           hrefName: '元件練習',
           childrens: [
             {
@@ -283,19 +296,7 @@ export default {
             },
           ]
         },
-        {
-          hrefName: '輪播套件',
-          childrens: [
-            {
-              href: '#/owlcarousel2',
-              hrefName: 'owl.carousel2',
-            },
-            {
-              href: '#/slickcarousel',
-              hrefName: 'slick-carousel',
-            },
-          ]
-        },
+
         {
           hrefName: '排版',
           childrens: [
@@ -323,6 +324,19 @@ export default {
               href: '#/typesetting6',
               hrefName: '某種排版設計'
             },
+
+          ]
+        }, {
+          hrefName: '常用參考資訊',
+          childrens: [
+            {
+              href: '#/typesetting8',
+              hrefName: '各種排版參考 - 多種圖片顯示參考'
+            },
+            {
+              href: '#/reference',
+              hrefName: 'windows model模型參考'
+            },
             {
               href: '#/typesetting7',
               hrefName: '垂直置中'
@@ -330,10 +344,6 @@ export default {
             {
               href: '#/typesetting9',
               hrefName: '垂直&水平置中'
-            },
-            {
-              href: '#/typesetting8',
-              hrefName: '各種排版參考 - 多種圖片顯示參考'
             },
           ]
         }
