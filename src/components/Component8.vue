@@ -347,10 +347,10 @@ body {
   max-height: 80px;
   height: auto;
   line-height: 36px;
-  width: 350px;
+  width: 33 0px;
   max-width: 450px;
   position: absolute;
-  left: -40px;
+  left: -30px;
   top: 30px;
   color: white;
   font-weight: 600;
