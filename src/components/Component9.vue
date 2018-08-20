@@ -1,5 +1,11 @@
 <template>
   <div class="wrapper centerAndCenter">
+
+    <!-- 複製出去要刪除 -->
+    <a class="referenceInfo" href="https://cms.straas.io/#/users/sign_in">
+      作品參考: StraaS.io CMS 影音內容管理系統
+    </a>
+
     <form class="loginForm">
       <header>Hello</header>
       <section>
@@ -32,6 +38,13 @@ nav.navbar {
   display: none;
 }
 
+.referenceInfo {
+  position: absolute;
+  top: calc(15%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* 內容開始 */
 * {
   margin: 0;
@@ -61,7 +74,7 @@ nav.navbar {
   /* height: 500px; */
   width: 500px;
   padding: 40px 60px 40px;
-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
   /* border: 1px solid red; */
 }
 
