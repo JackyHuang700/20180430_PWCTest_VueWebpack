@@ -291,6 +291,10 @@ export default {
               hrefName: 'laravel基底後台 - login(後台登入畫面)'
             },
             {
+              href: '#/component9',
+              hrefName: 'laravel基底後台 - login(後台登入畫面)'
+            },
+            {
               href: '#/component8',
               hrefName: 'laravel基底後台 - mulit components'
             },
@@ -322,7 +326,11 @@ export default {
             },
             {
               href: '#/typesetting6',
-              hrefName: '某種排版設計'
+              hrefName: '傳統排版設計'
+            },
+            {
+              href: '#/typesetting10',
+              hrefName: '一頁式(strike navbar)'
             },
 
           ]
