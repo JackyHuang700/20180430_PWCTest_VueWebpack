@@ -292,7 +292,11 @@ export default {
             },
             {
               href: '#/component9',
-              hrefName: 'laravel基底後台 - login(後台登入畫面)'
+              hrefName: 'laravel基底後台 - login(後台登入畫面) by StraaS'
+            },
+            {
+              href: '#/component10',
+              hrefName: 'laravel基底後台 - login(後台登入畫面) by'
             },
             {
               href: '#/component8',

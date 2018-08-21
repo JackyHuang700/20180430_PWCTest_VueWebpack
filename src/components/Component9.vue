@@ -32,12 +32,15 @@ export default {
   name: 'component9'
 }
 </script>
-<style lang="css" scoped>
+
+<style lang="css">
 /* hide navbar */
 nav.navbar {
   display: none;
 }
+</style>
 
+<style lang="css" scoped>
 .referenceInfo {
   position: absolute;
   top: calc(15%);
