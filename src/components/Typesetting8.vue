@@ -57,6 +57,16 @@ export default {
           imgSrc: 'p7.jpg'
         },
         {
+          title: 'login',
+          href: 'https://auth.91app.com/identity/login?signin=2d6fa3cee902766ecdfb3a102838997d',
+          imgSrc: 'p22.jpg'
+        },
+        {
+          title: 'login',
+          href: 'https://cms.straas.io/#/users/sign_in',
+          imgSrc: 'p23.jpg'
+        },
+        {
           title: 'infoCard',
           href: 'https://codepen.io/valentingalmand/pen/xGpRrW',
           imgSrc: 'p9.jpg'
@@ -115,6 +125,11 @@ export default {
           title: 'infoCard',
           href: 'https://codepen.io/rosst/pen/jmpROG',
           imgSrc: 'p20.jpg'
+        },
+        {
+          title: 'infoCard',
+          href: '',
+          imgSrc: 'p21.jpg'
         }
       ]
     }

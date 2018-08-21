@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper centerAndCenter">
     <!-- 複製出去要刪除 -->
-    <a class="referenceInfo" href="https://auth.91app.com/identity/login?signin=ce904befa5e3014fccccdc7270d66739">
+    <a class="referenceInfo" href="https://auth.91app.com/identity/login?signin=2d6fa3cee902766ecdfb3a102838997d">
       作品參考: 91App OSM全通路商店管理系統
     </a>
     <form action="" class="loginForm">
