@@ -23,6 +23,9 @@
           <label class="formRowLabelHeight" for="password">密碼</label>
           <a class="formRowLabelHeight" href="">忘記密碼</a>
           <input type="text" id="password" class="borderStyle" placeholder="請輸入密碼" />
+          <span class="far fa-eye inputIcon" id="changeIputMode"></span>
+          <!-- <i class="far fa-eye"></i>
+        <i class="far fa-eye-slash"></i> -->
         </div>
         <button type="submit" class="bgcStyle">登入</button>
       </section>
@@ -31,7 +34,28 @@
 </template>
 <script>
 export default {
-  name: 'component10'
+  name: 'component10',
+  mounted () {
+    ;(function () {
+      var changeIputModeDom = document.getElementById('changeIputMode')
+      changeIputModeDom.addEventListener('click', function (e) {
+        var self = e.target
+        var faEyeStr = 'fa-eye'
+        var faEyeSlashStr = 'fa-eye-slash'
+
+        var inputDom = self.previousElementSibling
+        if (inputDom.type === 'text') {
+          inputDom.type = 'password'
+          self.classList.add(faEyeStr)
+          self.classList.remove(faEyeSlashStr)
+        } else if (inputDom.type === 'password') {
+          inputDom.type = 'text'
+          self.classList.remove(faEyeStr)
+          self.classList.add(faEyeSlashStr)
+        }
+      })
+    })()
+  }
 }
 </script>
 
@@ -44,10 +68,7 @@ nav.navbar {
 body {
   overflow: hidden;
 }
-</style>
 
-
-<style lang="css" scoped>
 .referenceInfo {
   position: absolute;
   top: calc(15%);
@@ -165,6 +186,7 @@ body {
 .formRow {
   margin-bottom: 20px;
   width: 100%;
+  position: relative;
 }
 
 .formRow label {
@@ -204,6 +226,17 @@ body {
 .formRow input::-webkit-placeholder {
   color: #d4d9de;
   opacity: 0.5;
+}
+
+.formRow .inputIcon {
+  height: 50px;
+  line-height: 50px;
+  width: 40px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 .loginForm button[type='submit'] {
