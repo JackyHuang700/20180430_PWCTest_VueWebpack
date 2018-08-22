@@ -125,12 +125,20 @@
           <div class="footer"></div>
         </div>
       </section>
+      <Component81 />
+      <Component82 />
     </div>
   </div>
 </template>
 <script>
+import Component81 from './Component8_1.vue'
+import Component82 from './Component8_2.vue'
 export default {
-  name: 'component8'
+  name: 'component8',
+  components: {
+    Component81,
+    Component82,
+  }
 }
 </script>
 <style lang="css" scoped>
@@ -359,8 +367,7 @@ body {
   text-align: center;
 }
 
-
-.card3 .body{
+.card3 .body {
   padding: 90px 15px 20px;
   color: #bdc5cd;
   text-align: left;
