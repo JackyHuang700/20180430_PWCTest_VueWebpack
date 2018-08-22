@@ -57,12 +57,12 @@ export default {
           imgSrc: 'p7.jpg'
         },
         {
-          title: 'login',
+          title: 'login - [實作路由: /#/component10]',
           href: 'https://auth.91app.com/identity/login?signin=2d6fa3cee902766ecdfb3a102838997d',
           imgSrc: 'p22.jpg'
         },
         {
-          title: 'login',
+          title: 'login - [實作路由: /#/component9]',
           href: 'https://cms.straas.io/#/users/sign_in',
           imgSrc: 'p23.jpg'
         },
