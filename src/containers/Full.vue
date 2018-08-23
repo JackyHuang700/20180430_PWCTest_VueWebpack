@@ -250,12 +250,12 @@ export default {
           childrens: [
             {
               href: '#/owlcarousel2',
-              hrefName: 'owl.carousel2',
+              hrefName: 'owl.carousel2'
             },
             {
               href: '#/slickcarousel',
-              hrefName: 'slick-carousel',
-            },
+              hrefName: 'slick-carousel'
+            }
           ]
         },
         {
@@ -274,8 +274,12 @@ export default {
               hrefName: 'slider menu in NavBar'
             },
             {
-              href: '#/component4',
-              hrefName: 'float 排版'
+              href: '#/typesetting5',
+              hrefName: 'menu rwd'
+            },
+            {
+              href: '#/component11',
+              hrefName: 'menu rwd(標準樣式)'
             },
             {
               href: '#/component5',
@@ -301,7 +305,7 @@ export default {
             {
               href: '#/component8',
               hrefName: 'laravel基底後台 - mulit components'
-            },
+            }
           ]
         },
 
@@ -311,6 +315,10 @@ export default {
             {
               href: '#/typesetting',
               hrefName: 'float排版'
+            },
+            {
+              href: '#/component4',
+              hrefName: 'float 排版'
             },
             {
               href: '#/typesetting2',
@@ -324,10 +332,7 @@ export default {
               href: '#/typesetting4',
               hrefName: '使用%對width進行圖片(img)排版'
             },
-            {
-              href: '#/typesetting5',
-              hrefName: 'menu rwd'
-            },
+
             {
               href: '#/typesetting6',
               hrefName: '傳統排版設計'
@@ -335,10 +340,10 @@ export default {
             {
               href: '#/typesetting10',
               hrefName: '一頁式(strike navbar)'
-            },
-
+            }
           ]
-        }, {
+        },
+        {
           hrefName: '常用參考資訊',
           childrens: [
             {
@@ -356,7 +361,7 @@ export default {
             {
               href: '#/typesetting9',
               hrefName: '垂直&水平置中'
-            },
+            }
           ]
         }
       ]

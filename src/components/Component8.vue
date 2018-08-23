@@ -127,17 +127,23 @@
       </section>
       <Component81 />
       <Component82 />
+      <Component83 />
+      <Component84 />
     </div>
   </div>
 </template>
 <script>
 import Component81 from './Component8_1.vue'
 import Component82 from './Component8_2.vue'
+import Component83 from './Component8_3.vue'
+import Component84 from './Component8_4.vue'
 export default {
   name: 'component8',
   components: {
-    Component81,
+    Component84,
+    Component83,
     Component82,
+    Component81,
   }
 }
 </script>

@@ -1,6 +1,8 @@
 <template>
   <div class="col-md-3 text-left pl-5">
-    <h3>switch</h3>
+    <a href="https://www.youtube.com/watch?v=7SYaTk37tFs&list=PLwTi4JslRNFSDNNzOHOzguiLGGQIlvX8C&index=4&t=0s" target="_blank">
+      <h3>switch</h3>
+    </a>
     <div>
       <label class="switch" for="switchBtn">
         <input type="checkbox" id="switchBtn">
