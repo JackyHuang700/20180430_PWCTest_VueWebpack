@@ -279,7 +279,11 @@ export default {
             },
             {
               href: '#/component11',
-              hrefName: 'menu rwd(標準樣式)'
+              hrefName: 'menu rwd(標準樣式 - 純css)'
+            },
+            {
+              href: '#/component12',
+              hrefName: 'Dropdown menu'
             },
             {
               href: '#/component5',
