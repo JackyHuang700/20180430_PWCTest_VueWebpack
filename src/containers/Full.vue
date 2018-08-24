@@ -283,7 +283,7 @@ export default {
             },
             {
               href: '#/component12',
-              hrefName: 'Dropdown menu'
+              hrefName: '(go Top)Scroll To Top With Ease-In-Out Effect'
             },
             {
               href: '#/component5',
