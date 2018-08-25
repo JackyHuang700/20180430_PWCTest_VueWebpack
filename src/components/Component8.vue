@@ -129,6 +129,7 @@
       <Component82 />
       <Component83 />
       <Component84 />
+      <Component85 />
     </div>
   </div>
 </template>
@@ -137,9 +138,11 @@ import Component81 from './Component8_1.vue'
 import Component82 from './Component8_2.vue'
 import Component83 from './Component8_3.vue'
 import Component84 from './Component8_4.vue'
+import Component85 from './Component8_5.vue'
 export default {
   name: 'component8',
   components: {
+    Component85,
     Component84,
     Component83,
     Component82,

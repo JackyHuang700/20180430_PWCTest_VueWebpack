@@ -49,9 +49,6 @@ export default {
         totalTime = totalTime || 300
         easingPower = easingPower || 3
 
-        console.log(totalTime)
-        console.log(easingPower)
-
         // console.log("here");
         var timeInterval = 1 // in ms
         var scrollTop = Math.round(body.scrollTop || html.scrollTop)
