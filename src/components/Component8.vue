@@ -367,7 +367,7 @@ body {
   max-height: 80px;
   height: auto;
   line-height: 36px;
-  width: 33 0px;
+  width: 40%;
   max-width: 450px;
   position: absolute;
   left: -30px;
