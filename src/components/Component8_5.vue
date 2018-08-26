@@ -2,7 +2,7 @@
   <div class="col-md-6 text-left pl-5">
     <div class="text-center mb-5">
       <a href="https://www.youtube.com/watch?v=DYevj6UGNWA&index=40&list=PLwTi4JslRNFScEAPOJoLyxWFbJWdxcWEb&t=279s" target="_blank">
-        <h2>Step progress bar</h2>
+        <h2>Step progress bar(Timeline)</h2>
       </a>
     </div>
     <div>
