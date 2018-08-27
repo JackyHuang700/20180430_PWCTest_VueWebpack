@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 text-left pl-5">
+  <div class="col-md-3 text-left pl-5">
     <div class="text-center mb-5">
       <a href="https://www.youtube.com/watch?v=BKhoo6RSEDU&t=24s&index=42&list=PLwTi4JslRNFScEAPOJoLyxWFbJWdxcWEb" target="_blank">
         <h2>Move Placeholder To Top on Focus And While Typing</h2>

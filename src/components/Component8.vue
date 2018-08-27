@@ -133,6 +133,7 @@
       <Component86 />
       <Component87 />
       <Component88 />
+      <Component89 />
     </div>
   </div>
 </template>
@@ -145,11 +146,13 @@ import Component85 from './Component8_5.vue'
 import Component86 from './Component8_6.vue'
 import Component87 from './Component8_7.vue'
 import Component88 from './Component8_8.vue'
+import Component89 from './Component8_9.vue'
 export default {
   name: 'component8',
   components: {
-    Component87,
     Component88,
+    Component89,
+    Component87,
     Component86,
     Component85,
     Component84,
