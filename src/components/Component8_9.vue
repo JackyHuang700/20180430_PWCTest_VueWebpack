@@ -43,10 +43,14 @@ export default {
 .bgc {
   width: 100%;
   height: 50vh;
+  background-color: #efefef;
   // background: url();
   background-size: cover;
   position: relative;
 }
+
+$temaplteColor: rgb(104, 58, 183);
+$temaplteColorHover: #ff0057;
 
 .center {
   position: absolute;
@@ -55,11 +59,9 @@ export default {
   transform: translate(-50%, -50%);
   width: 700px;
   height: 350px;
-  background-color: rgba(103, 58, 183, 0.7);
+  background-color: rgba($temaplteColor, .6);
 }
 
-$temaplteColor: rgba(104, 58, 183, 0.687);
-$temaplteColorHover: #ff0057;
 .form {
   .form_content,
   .login_form {
