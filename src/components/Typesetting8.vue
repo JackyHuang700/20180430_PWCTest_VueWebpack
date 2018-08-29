@@ -67,6 +67,11 @@ export default {
           imgSrc: 'p23.jpg'
         },
         {
+          title: 'login - [實作路由: /#/component13]',
+          href: 'https://www.youtube.com/playlist?list=PLwTi4JslRNFScEAPOJoLyxWFbJWdxcWEb',
+          imgSrc: 'p24.png'
+        },
+        {
           title: 'infoCard',
           href: 'https://codepen.io/valentingalmand/pen/xGpRrW',
           imgSrc: 'p9.jpg'
