@@ -80,6 +80,7 @@ nav.navbar {
   top: calc(15%);
   left: 50%;
   transform: translateX(-50%);
+  color: red;
 }
 
 /* 內容開始 */
