@@ -123,6 +123,7 @@ $templateColor2: #03a9f4;
       color: $templateColor;
       padding: 10px 0;
       font-size: 16px;
+      /* impotant */
       pointer-events: none;
       transition: top 0.3s ease-in-out, color 0.3s ease-in-out,
         font-size 0.3s ease-in-out;

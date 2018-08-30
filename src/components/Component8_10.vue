@@ -224,7 +224,6 @@ export default {
   width: 100%;
   max-width: 480px;
   margin: auto;
-  // border: 1px solid red;
 
   h1 {
     text-align: center;
@@ -232,14 +231,12 @@ export default {
 }
 
 .nav {
-  // border: 1px solid red;
 
   list-style-type: none;
   padding: 0;
   margin: 0;
 
   .nav-item {
-    // border: 1px solid red;
     padding: 16px 16px;
     position: relative;
     overflow: hidden;

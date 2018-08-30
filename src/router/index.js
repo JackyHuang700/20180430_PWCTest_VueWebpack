@@ -79,6 +79,7 @@ import Component10 from '@/components/Component10'
 import Component11 from '@/components/Component11'
 import Component12 from '@/components/Component12'
 import Component13 from '@/components/Component13'
+import Component14 from '@/components/Component14'
 
 // 排版
 import Typesetting from '@/components/Typesetting'
@@ -243,6 +244,11 @@ export default new Router({
           path: 'component13',
           name: 'Component13',
           component: Component13
+        },
+        {
+          path: 'component14',
+          name: 'Component14',
+          component: Component14
         },
         {
           path: 'jquerymaskmoney',

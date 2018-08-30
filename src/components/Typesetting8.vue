@@ -135,7 +135,13 @@ export default {
           title: 'infoCard',
           href: '',
           imgSrc: 'p21.jpg'
-        }
+        },
+        /* 尚未填寫完成 */
+        // {
+        //   title: 'Sliding Sidebar  - [實作路由: /#/component14]',
+        //   href: 'https://www.youtube.com/watch?v=3PZAlID3T78&list=PLwTi4JslRNFScEAPOJoLyxWFbJWdxcWEb&index=54&t=9s',
+        //   imgSrc: ''
+        // }
       ]
     }
   }
