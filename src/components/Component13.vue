@@ -33,12 +33,6 @@ nav.navbar {
   display: none;
 }
 
-.referenceInfo {
-  position: absolute;
-  top: calc(15%);
-  left: 50%;
-  transform: translateX(-50%);
-}
 /* 內容開始 */
 
 * {

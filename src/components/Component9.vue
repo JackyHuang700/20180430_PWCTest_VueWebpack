@@ -41,13 +41,6 @@ nav.navbar {
 </style>
 
 <style lang="css" scoped>
-.referenceInfo {
-  position: absolute;
-  top: calc(15%);
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 /* 內容開始 */
 * {
   margin: 0;

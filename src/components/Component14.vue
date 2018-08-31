@@ -76,10 +76,6 @@ nav.navbar {
 }
 
 .referenceInfo {
-  position: absolute;
-  top: calc(15%);
-  left: 50%;
-  transform: translateX(-50%);
   color: red;
 }
 
