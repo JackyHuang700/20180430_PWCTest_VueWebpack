@@ -49,3 +49,14 @@ export default {
   }
 }
 </script>
+<style  lang="css" scoped>
+.navbar {
+  overflow: auto;
+}
+
+@media screen and (min-width: 539px) and (max-width: 1083px){
+  .navbar-brand{
+    display: none;
+  }
+}
+</style>
