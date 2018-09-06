@@ -141,6 +141,21 @@ export default {
           href: '',
           imgSrc: 'p21.jpg'
         },
+        {
+          title: 'infoCard',
+          href: 'http://www.lw-prosystem.com/#/',
+          imgSrc: 'p26.jpg'
+        },
+        {
+          title: 'CheckBox - [實作路由: /#/component8]',
+          href: '',
+          imgSrc: 'p27.jpg'
+        },
+        {
+          title: 'Button',
+          href: '',
+          imgSrc: 'p28.jpg'
+        },
         /* 尚未填寫完成 */
         // {
         //   title: 'Sliding Sidebar  - [實作路由: /#/component14]',
