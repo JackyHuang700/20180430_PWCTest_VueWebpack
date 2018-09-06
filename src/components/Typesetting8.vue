@@ -142,7 +142,7 @@ export default {
           imgSrc: 'p21.jpg'
         },
         {
-          title: 'infoCard',
+          title: 'infoCard - [實作路由: /#/component8]',
           href: 'http://www.lw-prosystem.com/#/',
           imgSrc: 'p26.jpg'
         },
