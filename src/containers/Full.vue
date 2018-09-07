@@ -215,14 +215,23 @@ export default {
           ]
         },
         {
-          hrefName: 'jQueryMaskmoney',
+          hrefName: 'JQuery mulit package',
           childrens: [
             {
               href: '#/jQueryMaskmoney',
-              hrefName: 'demo'
+              hrefName: 'jQueryMaskmoney - demo'
             }
           ]
         },
+        // {
+        //   hrefName: 'jQueryMaskmoney',
+        //   childrens: [
+        //     {
+        //       href: '#/jQueryMaskmoney',
+        //       hrefName: 'demo'
+        //     }
+        //   ]
+        // },
         {
           hrefName: 'mulit chart 套件',
           childrens: [
