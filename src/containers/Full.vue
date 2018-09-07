@@ -220,18 +220,17 @@ export default {
             {
               href: '#/jQueryMaskmoney',
               hrefName: 'jQueryMaskmoney - demo'
+            },
+            {
+              href: '#/Fullcalendar',
+              hrefName: 'Fullcalendar - demo'
+            },
+            {
+              href: '#/Fullcalendar2',
+              hrefName: 'Fullcalendar2 - demo'
             }
           ]
         },
-        // {
-        //   hrefName: 'jQueryMaskmoney',
-        //   childrens: [
-        //     {
-        //       href: '#/jQueryMaskmoney',
-        //       hrefName: 'demo'
-        //     }
-        //   ]
-        // },
         {
           hrefName: 'mulit chart 套件',
           childrens: [

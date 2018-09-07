@@ -101,6 +101,10 @@ import OwlCarousel2 from '@/components/OwlCarousel2'
 // 參考資訊
 import Reference from '@/components/Reference'
 
+// Fullcalendar
+import Fullcalendar from '@/components/Fullcalendar'
+import Fullcalendar2 from '@/components/Fullcalendar2'
+
 Vue.use(Router)
 
 export default new Router({
@@ -115,6 +119,16 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'fullcalendar2',
+          name: 'Fullcalendar2',
+          component: Fullcalendar2
+        },
+        {
+          path: 'fullcalendar',
+          name: 'Fullcalendar',
+          component: Fullcalendar
         },
         {
           path: 'reference',
