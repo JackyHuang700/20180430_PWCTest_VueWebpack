@@ -104,6 +104,9 @@ import Reference from '@/components/Reference'
 // Fullcalendar
 import Fullcalendar from '@/components/Fullcalendar'
 import Fullcalendar2 from '@/components/Fullcalendar2'
+import Fullcalendar3 from '@/components/Fullcalendar3'
+import Fullcalendar4 from '@/components/Fullcalendar4'
+import Fullcalendar5 from '@/components/Fullcalendar5'
 
 Vue.use(Router)
 
@@ -119,6 +122,21 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'fullcalendar5',
+          name: 'Fullcalendar5',
+          component: Fullcalendar5
+        },
+        {
+          path: 'fullcalendar4',
+          name: 'Fullcalendar4',
+          component: Fullcalendar4
+        },
+        {
+          path: 'fullcalendar3',
+          name: 'Fullcalendar3',
+          component: Fullcalendar3
         },
         {
           path: 'fullcalendar2',

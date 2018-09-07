@@ -228,7 +228,19 @@ export default {
             {
               href: '#/Fullcalendar2',
               hrefName: 'Fullcalendar2 - demo'
-            }
+            },
+            {
+              href: '#/Fullcalendar3',
+              hrefName: 'Fullcalendar3 - demo'
+            },
+            {
+              href: '#/Fullcalendar4',
+              hrefName: 'Fullcalendar4 - demo'
+            },
+            {
+              href: '#/Fullcalendar5',
+              hrefName: 'Fullcalendar5 - demo'
+            },
           ]
         },
         {

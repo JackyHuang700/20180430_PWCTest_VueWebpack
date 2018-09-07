@@ -72,6 +72,7 @@ export default {
         ----------------------------------------------------------------- */
 
         var calendar = $('#calendar').fullCalendar({
+          schedulerLicenseKey: 'GPL-My-Project-Is-Open-Source',
           header: {
             left: 'prev,next today',
             center: 'title',
