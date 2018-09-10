@@ -56,13 +56,17 @@ $ersLoginBox: 450px;
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+body{
+    min-width: $ersLoginBox;
+}
+
 .body {
   position: relative;
   background-image: linear-gradient(#d9e1ec, #bfd6f9);
   width: 100%;
   height: 100vh;
   -webkit-perspective: 1000;
-  min-width: $ersLoginBox;
+  // min-width: $ersLoginBox;
 }
 
 .ersLoginBox {
