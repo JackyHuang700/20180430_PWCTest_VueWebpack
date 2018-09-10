@@ -77,6 +77,11 @@ export default {
           imgSrc: 'p25.png'
         },
         {
+          title: 'login',
+          href: 'https://spa.e-record.com.tw/login?href=https%3A%2F%2Fspa.e-record.com.tw%2Fhome',
+          imgSrc: 'p29.jpg'
+        },
+        {
           title: 'infoCard',
           href: 'https://codepen.io/valentingalmand/pen/xGpRrW',
           imgSrc: 'p9.jpg'
