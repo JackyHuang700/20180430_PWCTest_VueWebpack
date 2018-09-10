@@ -47,6 +47,7 @@ body {
 /* 內容開始 */
 $loginBoxHeight: 420px;
 $loginBoxTitleHeight: 70px;
+$ersLoginBox: 450px;
 
 * {
   padding: 0;
@@ -61,11 +62,12 @@ $loginBoxTitleHeight: 70px;
   width: 100%;
   height: 100vh;
   -webkit-perspective: 1000;
+  min-width: $ersLoginBox;
 }
 
 .ersLoginBox {
   width: 100%;
-  max-width: 450px;
+  max-width: $ersLoginBox;
   height: $loginBoxHeight;
   overflow: hidden;
   z-index: 2;
@@ -88,13 +90,13 @@ $loginBoxTitleHeight: 70px;
     position: relative;
     background-color: #f5f7fb;
     padding: 0 15px;
+    overflow: hidden;
 
     img {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      // vertical-align: middle;
     }
   }
 
@@ -108,11 +110,12 @@ $loginBoxTitleHeight: 70px;
 
     h3 {
       text-align: center;
-      font-weight: bold;
-      letter-spacing: 1.1px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 1px;
       display: block;
       width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
       font-size: 18px;
       color: #1c202b;
     }
@@ -157,6 +160,7 @@ $loginBoxTitleHeight: 70px;
         padding-left: $labelWidth + $inputPadding + $inputGroupPadding;
         background-color: #fff;
         border-radius: 4px;
+        color: #555;
 
         &:focus {
           outline: none;
