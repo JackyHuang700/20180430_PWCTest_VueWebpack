@@ -335,6 +335,10 @@ export default {
               hrefName: 'laravel基底後台 - login(後台登入畫面) by'
             },
             {
+              href: '#/component16',
+              hrefName: 'laravel基底後台 - login(後台登入畫面) by 快記'
+            },
+            {
               href: '#/component8',
               hrefName: 'laravel基底後台 - mulit components'
             }
