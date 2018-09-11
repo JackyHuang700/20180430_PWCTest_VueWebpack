@@ -1,5 +1,5 @@
 <template>
-  <section class="w-100">
+  <section class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="https://www.youtube.com/watch?v=JLA0bMMWlfo" target="_blank">
       <!-- or  https://www.youtube.com/watch?v=LWFcee11a00&index=68&list=PLwTi4JslRNFScEAPOJoLyxWFbJWdxcWEb&t=28s -->

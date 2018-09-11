@@ -1,5 +1,5 @@
 <template>
-  <div class="row w-100">
+  <div class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="http://www.lw-prosystem.com/#/" target="_blank">
         <h2>lw-prosystem</h2>

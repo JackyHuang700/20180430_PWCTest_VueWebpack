@@ -28,7 +28,7 @@
 </template>
 <script>
 export default {
-  name: 'component8_19'
+  name: 'component8_22'
 }
 </script>
 <style lang="scss" scoped>
@@ -38,7 +38,6 @@ export default {
   box-sizing: border-box;
   font-family: 'Noto Sans TC', sans-serif;
 }
-
 
 .setUlBgc {
   background-color: red;
@@ -66,29 +65,29 @@ export default {
         &:before,
         &:after {
           opacity: 1;
-          transform: translateY(0px);
+          transform: translateX(0px);
         }
       }
 
       &:before,
       &:after {
         position: absolute;
-        left: 0px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        content: '';
         opacity: 0;
+        font-size: 13px;
+        top: 0px;
         transition: all 0.3s;
       }
 
-      &:before {
-        top: 0px;
-        transform: translateY(10px);
+      &::before {
+        content: '(';
+        left: 0px;
+        transform: translateX(10px);
       }
-      &:after {
-        bottom: 0px;
-        transform: translateY(-10px);
+
+      &::after {
+        content: ')';
+        right: 0px;
+        transform: translateX(-10px);
       }
     }
   }

@@ -20,6 +20,12 @@
       <Component817 />
       <Component818 />
       <Component819 />
+      <Component820 />
+      <Component821 />
+      <Component822 />
+      <Component823 />
+      <Component824 />
+      <Component825 />
     </div>
   </div>
 </template>
@@ -43,6 +49,12 @@ import Component816 from './Component8_16.vue'
 import Component817 from './Component8_17.vue'
 import Component818 from './Component8_18.vue'
 import Component819 from './Component8_19.vue'
+import Component820 from './Component8_20.vue'
+import Component821 from './Component8_21.vue'
+import Component822 from './Component8_22.vue'
+import Component823 from './Component8_23.vue'
+import Component824 from './Component8_24.vue'
+import Component825 from './Component8_25.vue'
 export default {
   name: 'component8',
   components: {
@@ -55,6 +67,12 @@ export default {
     Component817,
     Component818,
     Component819,
+    Component820,
+    Component821,
+    Component822,
+    Component823,
+    Component824,
+    Component825,
     Component810,
     Component89,
     Component88,

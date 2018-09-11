@@ -28,7 +28,7 @@
 </template>
 <script>
 export default {
-  name: 'component8_19'
+  name: 'component8_20'
 }
 </script>
 <style lang="scss" scoped>
@@ -38,7 +38,6 @@ export default {
   box-sizing: border-box;
   font-family: 'Noto Sans TC', sans-serif;
 }
-
 
 .setUlBgc {
   background-color: red;
@@ -84,11 +83,11 @@ export default {
 
       &:before {
         top: 0px;
-        transform: translateY(10px);
+        transform: translateY(-10px);
       }
       &:after {
         bottom: 0px;
-        transform: translateY(-10px);
+        transform: translateY(10px);
       }
     }
   }

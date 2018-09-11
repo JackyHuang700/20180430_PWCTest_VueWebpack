@@ -8,19 +8,19 @@
     <div class="col-md-12 w-100">
       <ul class="setUl setUlBgc">
         <li>
-          <a>HOME</a>
+          <a alt="HOME">HOME</a>
         </li>
         <li>
-          <a>ARTICLES</a>
+          <a alt="ARTICLES">ARTICLES</a>
         </li>
         <li>
-          <a>PORTFOLIO</a>
+          <a alt="PORTFOLIO">PORTFOLIO</a>
         </li>
         <li>
-          <a>ABOUT</a>
+          <a alt="ABOUT">ABOUT</a>
         </li>
         <li>
-          <a>CONTACT</a>
+          <a alt="CONTACT">CONTACT</a>
         </li>
       </ul>
     </div>
@@ -28,7 +28,7 @@
 </template>
 <script>
 export default {
-  name: 'component8_19'
+  name: 'component8_23'
 }
 </script>
 <style lang="scss" scoped>
@@ -38,7 +38,6 @@ export default {
   box-sizing: border-box;
   font-family: 'Noto Sans TC', sans-serif;
 }
-
 
 .setUlBgc {
   background-color: red;
@@ -58,37 +57,29 @@ export default {
 
     a {
       display: block;
-      text-align: center;
+      text-align: left;
       width: 100%;
       position: relative;
+      color: rgba(255, 255, 255, 0.3);
 
       &:hover {
-        &:before,
-        &:after {
+        &::before {
+          transform: scale(1);
           opacity: 1;
-          transform: translateY(0px);
         }
       }
 
-      &:before,
-      &:after {
+      &::before {
         position: absolute;
-        left: 0px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        content: '';
+        color: #fff;
+        top: -10px;
+        left: -10px;
+        padding: 10px;
+        overflow: hidden;
+        content: attr(alt);
+        transition: all 0.4s;
+        transform: scale(1.2);
         opacity: 0;
-        transition: all 0.3s;
-      }
-
-      &:before {
-        top: 0px;
-        transform: translateY(10px);
-      }
-      &:after {
-        bottom: 0px;
-        transform: translateY(-10px);
       }
     }
   }
