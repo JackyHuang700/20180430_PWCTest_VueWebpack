@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
 /* hide navbar */
 nav.navbar {
   display: none;
@@ -176,6 +176,8 @@ body {
   color: #92989d;
 }
 
+$formRowLeft: 50%;
+
 .formRow {
   margin-bottom: 20px;
   width: 100%;
@@ -184,14 +186,14 @@ body {
 
 .formRow label {
   float: left;
-  width: 78%;
+  width: $formRowLeft;
   text-align: left;
   font-size: 16px;
   margin-bottom: 5px;
 }
 
 .formRow a {
-  width: 22%;
+  width: 100% - $formRowLeft;
   float: left;
   text-align: right;
 }
