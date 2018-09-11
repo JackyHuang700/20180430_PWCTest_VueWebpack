@@ -22,7 +22,7 @@
         <div class="formRow">
           <label class="formRowLabelHeight" for="password">密碼</label>
           <a class="formRowLabelHeight" href="">忘記密碼</a>
-          <input type="text" id="password" class="borderStyle" placeholder="請輸入密碼" />
+          <input type="password" id="password" class="borderStyle" placeholder="請輸入密碼" />
           <span class="far fa-eye inputIcon" id="changeIputMode"></span>
           <!-- <i class="far fa-eye"></i>
         <i class="far fa-eye-slash"></i> -->
