@@ -241,6 +241,10 @@ export default {
               href: '#/Fullcalendar5',
               hrefName: 'Fullcalendar5 - demo'
             },
+            {
+              href: '#/Dragula',
+              hrefName: 'Dragula - demo'
+            },
           ]
         },
         {

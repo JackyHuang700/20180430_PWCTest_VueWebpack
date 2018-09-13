@@ -109,6 +109,9 @@ import Fullcalendar3 from '@/components/Fullcalendar3'
 import Fullcalendar4 from '@/components/Fullcalendar4'
 import Fullcalendar5 from '@/components/Fullcalendar5'
 
+// Dragula
+import Dragula from '@/components/Dragula'
+
 Vue.use(Router)
 
 export default new Router({
@@ -123,6 +126,11 @@ export default new Router({
           path: 'dashboard',
           name: 'Dashboard',
           component: HelloWorld
+        },
+        {
+          path: 'dragula',
+          name: 'Dragula',
+          component: Dragula
         },
         {
           path: 'fullcalendar5',
