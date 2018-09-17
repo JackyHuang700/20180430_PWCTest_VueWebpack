@@ -2,16 +2,16 @@
   <div class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="https://spa.e-record.com.tw/accounting-sign/24741882/scanning" target="_blank">
-        <h2>....</h2>
+        <h2>好看的動畫特效</h2>
       </a>
     </div>
-    <div class="col-md-12" >
+    <div class="col-md-12">
 
       <div class="domContainer" style="display:block;margin: 0 auto;">
-        <h3 class=" animated fadeInDown">請選擇您要上傳的憑證類別</h3>
-        <div class="animated zoomIn domBtn">銷項憑證(收入)</div>
-        <div class="animated zoomIn domBtn">進項憑證(費用)</div>
-        <div class="animated zoomIn domBtn">.txt或excel檔案</div>
+        <h3 class="animatedDelay animated fadeInDown">請選擇您要上傳的憑證類別</h3>
+        <div class="animatedDelay animated zoomIn domBtn">銷項憑證(收入)</div>
+        <div class="animatedDelay animated zoomIn domBtn">進項憑證(費用)</div>
+        <div class="animatedDelay animated zoomIn domBtn">.txt或excel檔案</div>
       </div>
     </div>
   </div>
@@ -71,6 +71,10 @@ $domContainer_maxWidth: 1100px;
       color: #8c9db7;
     }
   }
+}
+
+.animatedDelay{
+  animation-delay: 5s;
 }
 
 .animated {
