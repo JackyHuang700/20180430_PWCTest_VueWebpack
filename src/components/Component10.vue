@@ -159,6 +159,7 @@ body {
 
 .logo .colorStyle2 {
   color: #737373;
+  overflow: hidden;
 }
 
 /* right */

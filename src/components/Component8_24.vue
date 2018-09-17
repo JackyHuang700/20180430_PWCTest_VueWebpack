@@ -28,7 +28,7 @@
 </template>
 <script>
 export default {
-  name: 'component8_23'
+  name: 'component8_24'
 }
 </script>
 <style lang="scss" scoped>
