@@ -29,6 +29,8 @@
       <Component826 />
       <Component827 />
       <Component828 />
+      <Component829 />
+      <Component830 />
     </div>
   </div>
 </template>
@@ -61,6 +63,8 @@ import Component825 from './Component8_25.vue'
 import Component826 from './Component8_26.vue'
 import Component827 from './Component8_27.vue'
 import Component828 from './Component8_28.vue'
+import Component829 from './Component8_29.vue'
+import Component830 from './Component8_30.vue'
 export default {
   name: 'component8',
   components: {
@@ -82,6 +86,8 @@ export default {
     Component826,
     Component827,
     Component828,
+    Component829,
+    Component830,
     Component810,
     Component89,
     Component88,
