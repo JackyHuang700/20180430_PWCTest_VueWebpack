@@ -2,7 +2,7 @@
   <div class="col-md-1">
     <div class="col-md-12 text-center mx-5">
       <a href="https://codepen.io/EvyatarDa/pen/waKXMd" target="_blank">
-        <h2>Navigation Animation </h2>
+        <h5>Navigation Animation </h5>
       </a>
     </div>
     <div class="col-md-12 w-100">

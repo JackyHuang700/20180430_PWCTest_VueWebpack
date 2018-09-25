@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="https://codepen.io/isac/pen/NPjOgR?editors=0110" target="_blank">
-        <h2>Unfolding Post</h2>
+        <h5>Unfolding Post</h5>
       </a>
     </div>
     <div class="col-md-12">

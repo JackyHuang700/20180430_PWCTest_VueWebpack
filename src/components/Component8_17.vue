@@ -3,7 +3,7 @@
     <div class="col-md-12 text-center mx-5">
       <a href="https://www.youtube.com/watch?v=JLA0bMMWlfo" target="_blank">
       <!-- or  https://www.youtube.com/watch?v=LWFcee11a00&index=68&list=PLwTi4JslRNFScEAPOJoLyxWFbJWdxcWEb&t=28s -->
-        <h2>CSS User Card UI Design With Cool Image Hover Effects | Html CSS</h2>
+        <h5>CSS User Card UI Design With Cool Image Hover Effects | Html CSS</h5>
       </a>
     </div>
     <div class="col-md-12 mt-4 body">

@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="https://spa.e-record.com.tw/accounting-sign/24741882/scanning" target="_blank">
-        <h2>好看的動畫特效</h2>
+        <h5>好看的動畫特效</h5>
       </a>
     </div>
     <div class="col-md-12">

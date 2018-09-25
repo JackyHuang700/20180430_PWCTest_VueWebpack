@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="https://codepen.io/hsnaydd/pen/CJEnd" target="_blank">
-        <h2>Jquery dynamic tab menu</h2>
+        <h5>Jquery dynamic tab menu</h5>
       </a>
     </div>
     <div id="sekmeler-wrap">

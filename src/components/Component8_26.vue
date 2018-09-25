@@ -2,7 +2,7 @@
   <div class="col-md-12">
      <div class="col-md-12 text-center mx-5">
       <a href="http://jsfiddle.net/happysmiles/F33Av/22/" target="_blank">
-        <h2>Bootstrap Skeleton</h2>
+        <h5>Bootstrap Skeleton</h5>
       </a>
     </div>
     <div class="col-md-12 body">

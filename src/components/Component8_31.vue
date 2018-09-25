@@ -2,7 +2,7 @@
   <div class="col-md-12">
     <div class="col-md-12 text-center mx-5">
       <a href="https://jsfiddle.net/5g111cyx/15/" target="_blank">
-        <h2>Fiddle meta - 點擊滑動選單效果</h2>
+        <h5>Fiddle meta - 點擊滑動選單效果</h5>
       </a>
     </div>
     <div class="col-md-12">
