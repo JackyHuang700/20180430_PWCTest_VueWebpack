@@ -21,7 +21,10 @@
 </template>
 <script>
 export default {
-  name: 'Component8_1'
+  name: 'Component8_1',
+  mounted () {
+
+  }
 }
 </script>
 <style lang="scss" scoped>
