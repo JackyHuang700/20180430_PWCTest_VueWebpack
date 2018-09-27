@@ -159,6 +159,14 @@ export default {
             {
               href: '#/loading7',
               hrefName: 'loadingio網站Link'
+            },
+            {
+              href: '#/loading8',
+              hrefName: 'paceJs - Demo'
+            },
+            {
+              href: '#/loading9',
+              hrefName: 'NProgress - Demo'
             }
           ]
         },
