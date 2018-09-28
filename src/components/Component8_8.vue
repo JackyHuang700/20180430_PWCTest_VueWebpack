@@ -14,7 +14,7 @@
             <label for="">Name</label>
           </div>
           <div>
-            <input type="text" required>
+            <input type="text" >
             <label for="">Email</label>
           </div>
           <div>
@@ -29,7 +29,18 @@
 </template>
 <script>
 export default {
-  name: 'component8_8'
+  name: 'component8_8',
+  mounted () {
+    ;(function () {
+      $('.box input').focusout(formBoxFunc)
+      $('.box teatarea').focusout(formBoxFunc)
+
+      function formBoxFunc () {
+        if ($(this).val() !== '') $(this).addClass('isCompleted')
+        else $(this).removeClass('isCompleted')
+      }
+    })()
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -76,9 +87,9 @@ $templateColor: #f7497d;
     border-bottom: 2px solid #999;
 
     // 移動
-    &:focus ~ label,
     // 搭配 required tag
-    &:valid ~ label{
+    &:valid ~ label,
+    &:focus ~ label {
       top: -12px;
       left: 0;
       color: $templateColor;
@@ -86,8 +97,8 @@ $templateColor: #f7497d;
       font-weight: bold;
     }
 
-    &:focus, 
-    &:valid{
+    &:valid,
+    &:focus {
       border-bottom: 2px solid $templateColor;
     }
   }
@@ -111,7 +122,7 @@ $templateColor: #f7497d;
         top: 10px;
         left: 0;
         color: #999;
-        transition: top .2s ease-in-out;
+        transition: top 0.2s ease-in-out;
         pointer-events: none;
       }
     }
