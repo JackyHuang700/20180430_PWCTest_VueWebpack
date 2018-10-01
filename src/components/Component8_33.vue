@@ -57,7 +57,7 @@
 </template>
 <script>
 export default {
-  name: 'component8_32'
+  name: 'component8_33'
 }
 </script>
 <style lang="scss" scoped>
