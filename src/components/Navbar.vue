@@ -55,4 +55,8 @@ export default {
     display: none;
   }
 }
+
+nav.navbar {
+  display: block !important;
+}
 </style>
