@@ -63,4 +63,8 @@ nav.navbar {
 #navbarNavDropdown{
   height: 100%;
 }
+
+.dropdown-menu.dropdown-menu{
+  width: inherit;
+}
 </style>
