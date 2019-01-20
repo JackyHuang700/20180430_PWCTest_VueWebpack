@@ -88,7 +88,7 @@ export default {
 }
 
 /**/
-@import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
+// @import url('http://getbootstrap.com/2.3.2/assets/css/bootstrap.css');
 .nav-tabs > li {
   position: relative;
 }

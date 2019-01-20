@@ -63,8 +63,4 @@ nav.navbar {
 #navbarNavDropdown{
   height: 100%;
 }
-
-.dropdown-menu.show{
-  display: block !important;
-}
 </style>
