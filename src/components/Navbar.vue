@@ -59,4 +59,8 @@ export default {
 nav.navbar {
   display: block !important;
 }
+
+#navbarNavDropdown{
+  height: 100%;
+}
 </style>
